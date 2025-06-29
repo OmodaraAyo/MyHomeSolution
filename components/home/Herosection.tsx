@@ -49,7 +49,7 @@ export default function HeroSection() {
               alt=""
               width={300}
               height={300}
-              className="object-scale-down"
+              className="object-scale-down mix-blend-multiply"
               loading="lazy"
             />
             <Image
