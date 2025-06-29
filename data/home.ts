@@ -74,4 +74,37 @@ export const championData = [
     description: "Reach homeowners ready to upgrade their floors with stunning, professional results.",
     image: "/assets/images/home/hugeicons_floor-plan.svg",
   },
+  {
+    title: "Flooring Installation & Refinishing",
+    description: "Reach homeowners ready to upgrade their floors with stunning, professional results.",
+    image: "/assets/images/home/hugeicons_floor-plan.svg",
+  },
 ]
+
+export const brandData = [
+  {
+    id: 1,
+    image: "/assets/images/home/coinbase.svg",
+    title: "Coinbase",
+  },
+  {
+    id: 2,
+    image: "/assets/images/home/spotify.svg",
+    title: "Spotify",
+  },
+  {
+    id: 3,
+    image: "/assets/images/home/slack.svg",
+    title: "Slack",
+  },
+  {
+    id: 4,
+    image: "/assets/images/home/webflow.svg",
+    title: "Webflow",
+  },
+  {
+    id: 5,
+    image: "/assets/images/home/zoom.svg",
+    title: "Zoom",
+  },
+];

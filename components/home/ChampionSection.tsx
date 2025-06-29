@@ -4,7 +4,21 @@ import Link from "next/link";
 import { championData } from "@/data/home";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import Image from "next/image";
+import { useRef } from "react";
 export default function ChampionsSection() {
+  const scrollElement = useRef<HTMLDivElement>(null);
+
+  const handleScrollLeft = () => {
+    if (scrollElement.current) {
+      scrollElement.current.scrollBy({ left: -300, behavior: "smooth" });
+    }
+  }
+
+  const handleScrollRight = () => {
+    if (scrollElement.current) {
+      scrollElement.current.scrollBy({ left: 300, behavior: "smooth" });
+    }
+  }
   return (
     <section className="container mx-auto py-16 px-4 bg-white text-center">
       <motion.div
@@ -12,22 +26,22 @@ export default function ChampionsSection() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
-        className="mb-10 marker:container mx-auto max-w-xl"
+        className="mb-8 marker:container mx-auto max-w-lg "
       >
-        <p className="text-lg font-medium text-[#777777]">Elevating Home Service Businesses</p>
-        <p className="text-[29px] font-bold">We Love Serving Our Industry - Here’s Who We Champion Daily</p>
+        <p className="text-lg font-[400] text-[#777777]">Elevating Home Service Businesses</p>
+        <p className="text-[29px] font-[600] text-[#333333] mt-2">We Love Serving Our Industry - Here’s Who We Champion Daily</p>
       </motion.div>
-      <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
+        <div className="md:flex gap-6 min-w-[280px] marker:container mx-auto overflow-x-auto snap-x scrollbar-hide p-5" ref={scrollElement}>
         {championData.map((champion, index) => (
           <motion.div
             key={index}
-            className="p-6 border border-white rounded-xl shadow-xl shadow-[#f1f4fd] text-start flex flex-col gap-2"
+            className="min-w-[250px] md:max-w-[300px] flex-shrink-0 p-6 border border-white rounded-xl shadow-lg shadow-[#ecf1fd] text-start flex flex-col gap-2 snap-start"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.2 }}
             viewport={{ once: true }}
           >
-            {/* PLACE IMAGE HERE: Champion Icon {index+1} */}
+           
             <div className="w-12 h-12 bg-[#FFF8E5] mb-4 rounded-lg flex items-center justify-center">
               <Image
                 src={champion.image}
@@ -49,14 +63,15 @@ export default function ChampionsSection() {
         ))}
       </div>
 
+      {/* Navigation Buttons */}
       <div className="hidden md:flex w-fit ml-auto mt-8 items-center justify-center gap-2 px-2">
-        <button className="bg-[#F3F3F38F] text-white p-2 rounded-full flex items-center gap-2 shadow-lg shadow-[#f1f4fd] cursor-pointer">
+        <motion.button whileTap={{ scale: 0.9 }} whileHover={{ scale: 1.1 }} className="bg-[#F3F3F38F] text-white p-2 rounded-full flex items-center gap-2 shadow-lg shadow-[#f1f4fd] cursor-pointer" onClick={handleScrollLeft}>
           <ArrowLeft width={16} height={16} color="#1C3FAA"/>
-        </button>
+        </motion.button>
 
-         <button className="bg-[#FFFFFF] text-white p-2 rounded-full flex items-center gap-2 shadow-lg shadow-gray-200 cursor-pointer">
+         <motion.button whileTap={{ scale: 0.9 }} whileHover={{ scale: 1.1 }} className="bg-[#FFFFFF] text-white p-2 rounded-full flex items-center gap-2 shadow-lg shadow-gray-200 cursor-pointer" onClick={handleScrollRight}>
           <ArrowRight width={16} height={16} color="#1C3FAA"/>
-        </button>
+        </motion.button>
       </div>
     </section>
   );
