@@ -27,6 +27,51 @@ export const homeData = [
     {
         id: 5,
         title: 'bg',
-        image: "/assets/images/home/Vector20.png"
+        image: "/assets/images/home/mobileHome.svg"
+    },
+    {
+        id: 6,
+        title: 'bg',
+        image: "/assets/images/home/mobileHomeBg.svg"
+    },
+    {
+        id: 7,
+        title: 'bg',
+        image: "/assets/images/home/mdi_construction-outline.svg"
+    },
+    {
+        id: 8,
+        title: 'bg',
+        image: "/assets/images/home/game-icons_auto-repair.svg"
+    },
+    {
+        id: 9,
+        title: 'bg',
+        image: "/assets/images/home/property.svg"
     }
+]
+
+
+
+export const championData = [
+  {
+    title: "Property Management & Rental Solutions",
+    description: "Simplify operations and boost occupancy with digital strategies built for rental success.",
+    image: "/assets/images/home/property.svg",
+  },
+  {
+    title: "Home Repairs, Maintenance & Installation Services",
+    description: "Get found by homeowners in need of fast, reliable, and professional home services.",
+    image: "/assets/images/home/game-icons_auto-repair.svg",
+  },
+  {
+    title: "Home Renovation & Construction Services",
+    description: "Attract high-value projects with a powerful online presence that showcases your expertise.",
+    image: "/assets/images/home/mdi_construction-outline.svg",
+  },
+  {
+    title: "Flooring Installation & Refinishing",
+    description: "Reach homeowners ready to upgrade their floors with stunning, professional results.",
+    image: "/assets/images/home/hugeicons_floor-plan.svg",
+  },
 ]

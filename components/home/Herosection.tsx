@@ -9,10 +9,10 @@ export default function HeroSection() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1.2, ease: "easeOut" }}
-      className="bg-primary text-white relative h-screen min-h-[1060px] py-20 px-4 text-center"
+      className="bg-primary text-white relative h-screen min-h-[1000px] md:min-h-[1060px] py-20 px-4 text-center"
     >
       {/* Background Image */}
-      <div className="absolute inset-0 w-full h-full">
+      <div className="hidden md:block absolute inset-0 w-full h-full">
         <Image
           src={homeData[0].image}
           alt="Hero"
@@ -21,6 +21,18 @@ export default function HeroSection() {
           priority
         />
       </div>
+
+      {/* Background Image */}
+      <div className="absolute inset-0 w-full h-full md:hidden">
+        <Image
+          src={homeData[6].image}
+          alt="Hero"
+          fill
+          style={{ objectFit: "cover" }}
+          priority
+        />
+      </div>
+
 
       {/* Overlay with second image */}
       <div className="absolute inset-0 bg-black/55 opacity-50">
@@ -81,6 +93,17 @@ export default function HeroSection() {
             height={586}
             style={{ objectFit: "contain" }}
             loading="lazy"
+            className="hidden sm:block"
+          />
+
+          <Image
+            src={homeData[5].image}
+            alt=""
+            width={1000}
+            height={586}
+            style={{ objectFit: "contain" }}
+            loading="lazy"
+            className="sm:hidden"
           />
         </div>
       </motion.div>
