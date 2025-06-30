@@ -16,7 +16,7 @@ export default function ServicesSection() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
-        className="text-2xl sm:text-3xl font-semibold text-[#333333] mb-8 text-center flex flex-col items-center gap-5"
+        className="text-2xl sm:text-3xl font-semibold text-[#333333] mb-17 text-center flex flex-col items-center gap-5"
       >
         <p>Our Services</p>
 
@@ -85,9 +85,9 @@ export default function ServicesSection() {
 
         {/* Image */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
+          initial={{ opacity: 0, y: 40, scale: 0.95 }}
+          whileInView={{ opacity: 1, y: 0, scale: 1 }}
+          transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1], type: "spring", stiffness: 60, damping: 15}}
           viewport={{ once: true }}
           className="w-full max-w-2xl flex justify-center"
         >

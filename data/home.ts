@@ -49,6 +49,16 @@ export const homeData = [
     title: "bg",
     image: "/assets/images/home/property.svg",
   },
+  {
+    id: 10,
+    title: "bg",
+    image: "/assets/images/home/Vector17.svg",
+  },
+  {
+    id: 11,
+    title: "bg",
+    image: "/assets/images/home/Vector18.svg",
+  },
 ];
 
 export const championData = [
@@ -182,3 +192,103 @@ export const serviceSectionData = [
     title: "Media Buying",
   },
 ];
+
+export const howWeWorkData = [
+  {
+    id: 1,
+    title: "Discovery & Strategy Call",
+    description: "We start with a deep dive into your brand, challenges, and growth goals so we can design the right plan from day one.",
+    image: "/assets/images/home/HWWFrame1.svg",
+  },
+  {
+    id: 2,
+    title: "Custom Growth Blueprint",
+    description: "You get a tailored roadmap across digital marketing, brand scaling, and growth automation aligned to your industry and KPIs.",
+    image: "/assets/images/home/HWWFrame2.svg",
+  },
+  {
+    id: 3,
+    title: "Execution & Optimization",
+    description: "Our team launches, manages, and scales your campaigns, creative, and systems constantly refining for maximum performance.",
+    image: "/assets/images/home/HWWFrame3.svg",
+  },
+  {
+    id: 4,
+    title: "Reporting & Growth Loops",
+    description: "With clear reporting and data insights, we show you what’s working and evolve your strategy as your brand grows.",
+    image: "/assets/images/home/HWWFrame4.svg",
+  },
+]
+
+export const howWeWorkImage = [
+   {
+    id: 0,
+    title: "how we work desktop image",
+    image: "/assets/images/home/HWWImage.svg",
+  },
+]
+
+export const pricingPlanData = [
+  {
+    id: 0,
+    plan: "Sliver Plan",
+    planDescription: "Website & Visibility Starter",
+    price: "297",
+    duration: "month",
+    advantages: [
+      "Mobile-optimized branded website (up to 5 pages)",
+      "Custom design assets (hero banners, CTAs, icon sets)",
+      "Google Business Profile setup & optimization",
+      "Contact & quote form integration (email + SMS)",
+      "Basic SEO setup for 1 location",
+      "Hosting, SSL, backups, & monthly uptime report"
+    ]
+  },
+  {
+    id: 1,
+    plan: "Gold Plan",
+    planDescription: "Lead Engine & Conversion Growth",
+    price: "597",
+    duration: "month",
+    advantages: [
+      "Local SEO for 3+ cities or service zones",
+      "Booking system setup (Calendly or integrated CRM)",
+      "Review automation system (Google, Yelp)",
+      "Google & Facebook Ads creative + setup (1/month)",
+      "Email & SMS lead nurturing automations",
+      "1 monthly promo landing page / special offer",
+      "Conversion analytics dashboard + insights call"
+    ]
+  },
+  {
+    id: 2,
+    plan: "Platinum Plan",
+    planDescription: "Done-for-You Growth Engine",
+    price: "997",
+    duration: "month",
+    advantages: [
+      "High-performance sales funnel (lead magnet + drip email)",
+      "Full ad campaign management (Facebook & Google Ads)",
+      "CRM integration (GoHighLevel, HubSpot, Zoho, etc.)",
+      "Live chat & AI chatbot integration",
+      "Social proof management (testimonial widgets, review sync)",
+      "Unlimited monthly website updates (content + landing pages)",
+      "Dedicated success strategist + bi-weekly growth reviews"
+    ]
+  },
+  {
+    id: 3,
+    plan: "Custom Plan",
+    planDescription: "Enterprise & Multi-Location",
+    duration: "month",
+    advantages: [
+      "National & multi-location SEO strategy",
+      "Dedicated ad teams for content, PPC, and automation",
+      "White-glove CRM, POS, or SaaS integration",
+      "ROI dashboards, benchmark reporting, & competitor intel",
+      "Multi-site UX design & strategy",
+      "Priority support + account manager"
+    ]
+  },
+  
+]

@@ -26,13 +26,12 @@ export default function StrategySection() {
             viewport={{ once: true }}
             style={{ boxShadow: "-4px 4px 12px #ecf1fd" }}
           >
-            <div className="w-12 h-12 bg-[#FFF8E5] mb-4 rounded-lg flex items-center justify-center">
+            <div className="w-12 h-12 bg-[#FFF8E5] mb-4 rounded-full flex items-center justify-center">
               <Image
                 src={champion.image}
                 alt={champion.title}
-                width={30}
-                height={30}
-                className=""
+                width={25}
+                height={25}
               />
             </div>
             <h3 className="text-lg font-semibold min-w-full text-ellipsis line-clamp-2">

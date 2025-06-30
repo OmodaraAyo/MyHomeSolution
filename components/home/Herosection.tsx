@@ -55,9 +55,9 @@ export default function HeroSection() {
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             We Help Local Home Service Brands Go 10X Bigger
           </h1>
-          <div className="hidden lg:block w-fit ml-auto absolute top-33 right-18 px-8">
+          <div className="hidden md:block w-fit ml-auto absolute top-33 right-18 px-8">
             <Image
-              src={homeData[1].image}
+              src={homeData[10].image}
               alt=""
               width={300}
               height={300}
@@ -65,7 +65,7 @@ export default function HeroSection() {
               loading="lazy"
             />
             <Image
-              src={homeData[2].image}
+              src={homeData[11].image}
               alt=""
               width={300}
               height={300}
