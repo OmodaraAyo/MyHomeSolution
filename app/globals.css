@@ -1,20 +1,22 @@
 @import "tailwindcss";
 
 .scrollbar-hide::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
+
 @keyframes marquee {
-    0% {
-        transform: translateX(0%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
 }
 
 .animate-marquee {
-    display: flex;
-    width: max-content;
-    animation: marquee 30s linear infinite;
+  animation: marquee 20s linear infinite;
+  display: flex;
+  will-change: transform;
+}
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee {
+    animation: none;
+  }
 }

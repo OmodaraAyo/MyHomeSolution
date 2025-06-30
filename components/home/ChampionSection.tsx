@@ -20,13 +20,13 @@ export default function ChampionsSection() {
     }
   }
   return (
-    <section className="container mx-auto py-16 px-4 bg-white text-center">
+    <section className="container mx-auto py-16 px-4 bg-white text-center mb-17">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
-        className="mb-8 marker:container mx-auto max-w-lg "
+        className="mb-17 marker:container mx-auto max-w-lg "
       >
         <p className="text-lg font-[400] text-[#777777]">Elevating Home Service Businesses</p>
         <p className="text-[29px] font-[600] text-[#333333] mt-2">We Love Serving Our Industry - Here’s Who We Champion Daily</p>
