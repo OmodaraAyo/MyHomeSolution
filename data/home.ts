@@ -299,3 +299,96 @@ export const caseStudiesImages = [
     image: "/assets/images/home/CaseStudyBg.svg",
   },
 ]
+
+export const caseStudiesData = [
+  {
+    id: 0,
+    plan: "SHORT-TERM RENTAL",
+    percentage: 42,
+    description: "Increase in direct bookings",
+    ref: "/short-term-rental",
+    advantages: [
+      "3x more monthly website traffic",
+      "Local Google ranking in top 3",
+    ]
+  },
+  {
+    id: 1,
+    plan: "Plumbing & Handyman",
+    percentage: 67,
+    description: "Increase in inquiries within 90 days",
+    ref: "/plumbing&handyman",
+    advantages: [
+      "2x customer retention",
+      "80+ positive Google reviews generated with automation",
+    ]
+  },
+  {
+    id: 2,
+    plan: "Interior Design",
+    percentage: "5X",
+    description: "Engagement on social media",
+    ref: "/interior-design",
+    advantages: [
+      "+300% quote request forms submitted",
+      "Increased average project size by 40%",
+    ]
+  },
+  {
+    id: 3,
+    plan: "Home Protection",
+    percentage: 150,
+    description: "Increase in weekly bookings",
+    ref: "/home-protection",
+    advantages: [
+      "30% lower cost-per-lead",
+      "Ranked #1 for “pest control services in Nairobi”",
+    ]
+  },
+  
+]
+
+export const buildLegacyData = [
+  {
+    title: "Let’s Build Something Bigger Than Marketing — Let’s Build Your Legacy",
+    description: "We’re more than an agency—we’re your strategic growth partner, fully invested in the success of your home service business. Whether you're just starting or scaling up, our team is here to make sure every click, call, and campaign works for you."
+  }
+]
+
+export const blogImages = [
+   {
+    id: 0,
+    title: "desktop",
+    image: "/assets/images/home/BlogImage.svg",
+  },
+]
+
+export const blogData = [
+  {
+    id: 0,
+    description: "How Much Should You Really Spend on Digital Marketing in 2025?",
+    ref: "/trend",
+    trends: [
+      "Digital marketing",
+      "insights",
+    ]
+  },
+  {
+    id: 1,
+    description: "Online Marketing Checklist for Airbnb & Short-Term Rental Owners",
+    ref: "/online marketing",
+    trends: [
+      "Brand scaling",
+      "SEO goldmine",
+    ]
+  },
+  {
+    id: 2,
+    description: "Email Marketing Automation for Small Service-Based Brands",
+    ref: "/email-automation",
+    trends: [
+      "Digital marketing",
+    ]
+  },
+
+]

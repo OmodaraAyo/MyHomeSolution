@@ -7,6 +7,8 @@ import PricingPlanSection from "@/components/home/PricingPlans";
 import ServicesSection from "@/components/home/ServicesSection";
 import BuiltStrategySection from "@/components/home/BuiltStrategy";
 import CaseStudiesSection from "@/components/home/CaseStudies";
+import BuildLegacy from "@/components/home/BuildLegacy";
+import BlogSection from "@/components/home/Blog";
 
 export default function Home() {
   return (
@@ -20,6 +22,8 @@ export default function Home() {
         <HowWeWorkSection />
         <PricingPlanSection />
         <CaseStudiesSection />
+        <BuildLegacy/>
+        <BlogSection/>
       </div>
     </>
   );
