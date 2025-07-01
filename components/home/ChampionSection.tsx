@@ -5,6 +5,7 @@ import { championData } from "@/data/home";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { useRef } from "react";
+import sora from "@/public/fonts/Sora";
 export default function ChampionsSection() {
   const scrollElement = useRef<HTMLDivElement>(null);
 
@@ -26,10 +27,10 @@ export default function ChampionsSection() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
-        className="mb-17 marker:container mx-auto max-w-lg "
+        className="mb-17 mx-auto max-w-[40rem]"
       >
         <p className="text-lg font-[400] text-[#777777]">Elevating Home Service Businesses</p>
-        <p className="text-[29px] font-[600] text-[#333333] mt-2">We Love Serving Our Industry - Here’s Who We Champion Daily</p>
+        <p className={`text-2xl sm:text-3xl font-[600] text-[#333333] mt-2 ${sora.className}`}>We Love Serving Our Industry - Here’s Who We Champion Daily</p>
       </motion.div>
         <div className="md:flex gap-6 min-w-[280px] marker:container mx-auto overflow-x-auto snap-x scrollbar-hide p-5" ref={scrollElement}>
         {championData.map((champion, index) => (

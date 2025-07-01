@@ -290,5 +290,12 @@ export const pricingPlanData = [
       "Priority support + account manager"
     ]
   },
-  
+]
+
+export const caseStudiesImages = [
+   {
+    id: 0,
+    title: "desktop",
+    image: "/assets/images/home/CaseStudyBg.svg",
+  },
 ]

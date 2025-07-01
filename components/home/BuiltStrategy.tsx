@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import { strategyData } from "@/data/home";
 import Image from "next/image";
-export default function StrategySection() {
+import sora from "@/public/fonts/Sora";
+export default function BuiltStrategySection() {
   return (
     <section className="container mx-auto py-16 px-4 text-center flex flex-col lg:flex-row items-start justify-between">
       <motion.div
@@ -9,22 +10,22 @@ export default function StrategySection() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
-        className="mb-8 marker:container mx-auto max-w-lg text-center lg:text-left w-full"
+        className="mb-8 md:max-w-full lg:max-w-lg text-left md:text-center lg:text-left w-full"
       >
-        <p className="text-[29px] font-[600] text-[#333333] mt-2 lg:max-w-[20rem] lg:mt-3">
+        <p className={`text-2xl md:text-3xl font-[600] text-[#333333] mt-2 lg:max-w-[20rem] lg:mt-3 ${sora.className}`}>
           Built to Deliver More Than Just Clicks
         </p>
       </motion.div>
-      <div className="grid md:grid-cols-2 gap-6 min-w-fit marker:container overflow-x-auto snap-x scrollbar-hide pl-5 py-5">
+      <div className="grid md:grid-cols-2 gap-6 w-full md:pl-5 py-5">
         {strategyData.map((champion, index) => (
           <motion.div
             key={index}
-            className="min-w-[250px] md:max-w-[300px] flex-shrink-0 p-6 border border-white rounded-xl text-start flex flex-col gap-2 snap-start"
+            className="w-full sm:min-w-[250px] md:max-w-[300px] flex-shrink-0 p-6 border border-white rounded-xl text-start flex flex-col gap-2 snap-start"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.2 }}
             viewport={{ once: true }}
-            style={{ boxShadow: "-4px 4px 12px #ecf1fd" }}
+            style={{ boxShadow: "-3px 3px 5px rgba(0,0,0,0.15)" }}
           >
             <div className="w-12 h-12 bg-[#FFF8E5] mb-4 rounded-full flex items-center justify-center">
               <Image

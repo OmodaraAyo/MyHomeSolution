@@ -4,6 +4,7 @@ import Image from "next/image";
 import { ArrowRight, CheckCircle } from "lucide-react";
 import { useState } from "react";
 import Link from "next/link";
+import sora from "@/public/fonts/Sora";
 
 export default function ServicesSection() {
   const services = ["Digital Marketing", "Brand Scaling", "Growth Marketing"];
@@ -16,16 +17,16 @@ export default function ServicesSection() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
-        className="text-2xl sm:text-3xl font-semibold text-[#333333] mb-17 text-center flex flex-col items-center gap-5"
+        className={`text-2xl sm:text-3xl text-[#333333] mb-17 text-center flex flex-col items-center gap-5`}
       >
-        <p>Our Services</p>
+        <p className={`font-semibold ${sora.className}`}>Our Services</p>
 
-        <div className="flex flex-wrap justify-center gap-2 sm:gap-4 bg-[#EBF0FF] px-3 py-2.5 rounded-lg max-w-lg">
+        <div className="flex flex-wrap justify-center gap-2 sm:gap-4 bg-[#EBF0FF] px-3 py-2.5 rounded-lg max-w-lg font-medium">
           {services.map((service, index) => (
             <div
               key={index}
               onClick={() => setActiveService(service)}
-              className={`px-3 py-2 rounded-lg text-sm sm:text-base cursor-pointer transition-all duration-200 ${
+              className={`px-3 py-2 rounded-lg text-[10px] sm:text-base cursor-pointer transition-all duration-200 ${
                 activeService === service
                   ? "bg-[#1C3FAA] text-white shadow-[#acbff7]"
                   : "bg-transparent text-[#777777]"

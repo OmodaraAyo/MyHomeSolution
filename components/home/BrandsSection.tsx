@@ -1,4 +1,5 @@
 import { brandData } from "@/data/home";
+import sora from "@/public/fonts/Sora";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
@@ -10,7 +11,7 @@ export default function BrandsSection() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
-        className="text-[29px] font-[600] text-[#333333] mt-2 marker:container mx-auto max-w-lg mb-17 text-center"
+        className={`text-2xl sm:text-3xl font-[600] text-[#333333] mt-2 marker:container mx-auto max-w-lg mb-17 text-center ${sora.className}`}
       >
         Trusted by Local Service Legends and Global Hosts
       </motion.h2>
