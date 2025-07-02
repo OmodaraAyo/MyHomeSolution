@@ -5,7 +5,7 @@ import { useState } from "react";
 import sora from "@/public/fonts/Sora";
 
 export default function HowWeWorkSection() {
-  const [isHovered, setIsHovered] = useState<number | null>(0);
+  const [isHovered, setIsHovered] = useState<number | null>(null);
 
   const handleIsHoveredStart = (index: number) => {
     setIsHovered(index);
@@ -112,3 +112,6 @@ export default function HowWeWorkSection() {
     </section>
   );
 }
+
+//created by Omodara Ayodele 
+//github: OmodaraAyo

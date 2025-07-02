@@ -47,3 +47,6 @@ export default function BuiltStrategySection() {
     </section>
   );
 }
+
+//created by Omodara Ayodele 
+//github: OmodaraAyo

@@ -58,7 +58,7 @@ export default function BlogSection() {
                 <span className="text-[#1C3FAA] w-fit ml-auto"><ArrowUpRight/></span>
             </p>
 
-            <p className={`text-lg font-semibold  max-w-[490] text-ellipsis line-clamp-2 ${sora.className}`}>Why Your SEO Isn’t Working and How to Fix It</p>
+            <p className={`text-lg font-semibold max-w-[490] text-ellipsis line-clamp-2 ${sora.className}`}>Why Your SEO Isn’t Working and How to Fix It</p>
           </div>
         </motion.div>
 
@@ -90,7 +90,7 @@ export default function BlogSection() {
               <div className="flex gap-4 w-full mb-3">
                 {
                     data.trends.map((trend, idx) => (
-                        <div key={idx} className={`border px-4 py-1 rounded-full ${isHovered === index ? "text-white border-white": "text-[#535862] border-[#D5D7DA]"}`}>
+                        <div key={idx} className={`border px-4 py-1 rounded-full text-ellipsis line-clamp-1 ${isHovered === index ? "text-white border-white": "text-[#535862] border-[#D5D7DA]"}`}>
                             <p>{trend}</p>
                         </div>
                     ))
@@ -109,3 +109,6 @@ export default function BlogSection() {
     </section>
   );
 }
+
+//created by Omodara Ayodele 
+//github: OmodaraAyo

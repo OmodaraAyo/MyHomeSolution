@@ -7,3 +7,6 @@ export const navPages = [
   { name: "Resources", href: "/resources" },
   { name: "Contact Us", href: "/call" },
 ];
+
+//created by Omodara Ayodele 
+//github: OmodaraAyo

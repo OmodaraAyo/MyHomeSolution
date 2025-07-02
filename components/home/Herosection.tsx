@@ -111,3 +111,6 @@ export default function HeroSection() {
     </motion.section>
   );
 }
+
+//created by Omodara Ayodele 
+//github: OmodaraAyo

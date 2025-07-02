@@ -77,3 +77,6 @@ export default function ChampionsSection() {
     </section>
   );
 }
+
+//created by Omodara Ayodele 
+//github: OmodaraAyo

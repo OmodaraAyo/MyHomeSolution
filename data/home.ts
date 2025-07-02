@@ -1,3 +1,6 @@
+import { Phone, Mail, MapPin   } from 'lucide-react';
+import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
+
 export const homeData = [
   {
     id: 0,
@@ -392,3 +395,74 @@ export const blogData = [
   },
 
 ]
+
+//created by Omodara Ayodele 
+//github: OmodaraAyo
+
+export const foundersTestimonialData = [
+  {
+    founder: "Sarah Lee",
+    company: "Founder of Catalog",
+    description:
+      "Partnering with MyHomeSolution transformed our business. We went from invisible online to fully booked in under 3 months. Their team gets results — period.",
+    image: "/assets/images/home/foundersTestimonialImage1.svg",
+    title: "catalog"
+  },
+]
+
+export const contactInfos = [
+  {
+    value: "+1234 1234 1234",
+    icon: Phone,
+    label: "Phone",
+    href: "tel:+123412341234"
+  },
+  {
+    value: "hello@myHomeSolution.com",
+    icon: Mail,
+    label: "Email",
+    href: "malito:hello@myHomeSolution.com"
+  },
+  {
+    value: "Lagos, Nigeria",
+    icon: MapPin,
+    label: "Location",
+    href: "https://maps.google.com/?q=Lagos, Nigeria"
+  }
+
+]
+
+
+
+export const footerLinks = {
+  company: [
+    { label: "About", href: "/about" },
+    { label: "Services", href: "/services" },
+    { label: "How we work", href: "/how-we-work" },
+  ],
+  services: [
+    { label: "Digital Marketing", href: "/services/digital-marketing" },
+    { label: "Brand Scaling", href: "/services/brand-scaling" },
+    { label: "Growth Marketing", href: "/services/growth-marketing" },
+  ],
+  resources: [
+    { label: "Blogs", href: "/blogs" },
+    { label: "Newsletter", href: "/newsletter" },
+  ],
+  legal: [
+    { label: "Privacy Policy", href: "/privacy-policy" },
+    { label: "Terms & Conditions", href: "/terms" },
+    { label: "Support", href: "/support" },
+  ],
+  socials: [
+    { icon: Facebook, href: "#" },
+    { icon: Twitter, href: "#" },
+    { icon: Instagram, href: "#" },
+    { icon: Linkedin, href: "#" },
+  ],
+};
+
+
+
+//created by Omodara Ayodele 
+//github: OmodaraAyo

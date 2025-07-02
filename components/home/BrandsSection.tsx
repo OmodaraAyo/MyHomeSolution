@@ -35,6 +35,7 @@ export default function BrandsSection() {
                   width={brand.title === "Zoom" || brand.title === "Webflow" || brand.title === "Slack" ? 100 : 132}
                   height={brand.title === "Zoom" || brand.title === "Webflow" || brand.title === "Slack" ? 50 : 62}
                   className="object-contain"
+                  style={{ height: 'auto' }}
                 />
               </motion.div>
             ))}
@@ -69,3 +70,6 @@ export default function BrandsSection() {
     </section>
   );
 }
+
+//created by Omodara Ayodele 
+//github: OmodaraAyo

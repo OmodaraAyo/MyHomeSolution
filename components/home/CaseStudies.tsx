@@ -128,3 +128,6 @@ export default function CaseStudiesSection() {
     </section>
   );
 }
+
+//created by Omodara Ayodele 
+//github: OmodaraAyo

@@ -103,3 +103,6 @@ export default function PricingPlanSection() {
     </section>
   );
 }
+
+//created by Omodara Ayodele 
+//github: OmodaraAyo

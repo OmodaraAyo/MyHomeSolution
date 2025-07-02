@@ -7,3 +7,6 @@ export const DisplayNAICurrency = (amount: number) => {
         maximumFractionDigits: 0,
     });
 };
+
+//created by Omodara Ayodele 
+//github: OmodaraAyo
