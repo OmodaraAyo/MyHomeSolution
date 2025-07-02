@@ -143,3 +143,6 @@ export default function LetsTalk() {
     </section>
   );
 }
+
+//created by Omodara Ayodele 
+//github: OmodaraAyo

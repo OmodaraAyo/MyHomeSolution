@@ -108,3 +108,6 @@ export default function Footer() {
     </section>
   );
 }
+
+//created by Omodara Ayodele 
+//github: OmodaraAyo
