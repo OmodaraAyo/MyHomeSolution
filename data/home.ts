@@ -196,6 +196,22 @@ export const serviceSectionData = [
   },
 ];
 
+export const servicesRef = [
+  {
+    title: "Digital Marketing",
+    link: "/digital-marketing"
+  },
+  {
+    title: "Brand Scaling",
+    link: "/brand-scaling"
+  },
+  {
+    title: "Growth Marketing",
+    link: "/growth-marketing"
+  },
+  
+];
+
 export const howWeWorkData = [
   {
     id: 1,

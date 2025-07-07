@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { serviceSectionData, serviceSectionImages } from "@/data/home";
+import { serviceSectionData, serviceSectionImages, servicesRef } from "@/data/home";
 import Image from "next/image";
 import { ArrowRight, CheckCircle } from "lucide-react";
 import { useState } from "react";
@@ -7,8 +7,8 @@ import Link from "next/link";
 import sora from "@/public/fonts/Sora";
 
 export default function ServicesSection() {
-  const services = ["Digital Marketing", "Brand Scaling", "Growth Marketing"];
   const [activeService, setActiveService] = useState("Digital Marketing");
+  const currentService = servicesRef.find(service => service.title === activeService);
 
   return (
     <section className="container mx-auto py-12 px-4 text-center items-center">
@@ -22,17 +22,17 @@ export default function ServicesSection() {
         <p className={`font-semibold ${sora.className}`}>Our Services</p>
 
         <div className="flex flex-wrap justify-center gap-2 sm:gap-4 bg-[#EBF0FF] px-3 py-2.5 rounded-lg max-w-lg font-medium">
-          {services.map((service, index) => (
+          {servicesRef.map((service, index) => (
             <div
               key={index}
-              onClick={() => setActiveService(service)}
+              onClick={() => setActiveService(service.title)}
               className={`px-3 py-2 rounded-lg text-[10px] sm:text-base cursor-pointer transition-all duration-200 ${
-                activeService === service
+                activeService === service.title
                   ? "bg-[#1C3FAA] text-white shadow-[#acbff7]"
                   : "bg-transparent text-[#777777]"
               }`}
             >
-              {service}
+              {service.title}
             </div>
           ))}
         </div>
@@ -73,15 +73,21 @@ export default function ServicesSection() {
             </div>
           </div>
 
-          <Link
-            href="/learn-more"
-            className="flex items-center bg-[#1C3FAA] rounded-xl px-4 py-2 w-fit justify-center gap-2 text-white mt-4"
-          >
-            <p>Learn More</p>
-            <span className="inline-block border-2 rounded-full p-1">
-              <ArrowRight width={14} height={14} />
-            </span>
-          </Link>
+          {
+            currentService && (
+
+              <Link
+                href={currentService.link}
+                className="flex items-center bg-[#1C3FAA] rounded-xl px-4 py-2 w-fit justify-center gap-2 text-white mt-4"
+              >
+                <p>Learn More</p>
+                <span className="inline-block border-2 rounded-full p-1">
+                  <ArrowRight width={14} height={14} />
+                </span>
+              </Link>
+            )
+          }
+
         </motion.div>
 
         {/* Image */}
