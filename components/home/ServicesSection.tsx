@@ -1,14 +1,20 @@
 import { motion } from "framer-motion";
-import { serviceSectionData, serviceSectionImages, servicesRef } from "@/data/home";
+import {
+  serviceSectionData,
+  serviceSectionImages,
+  servicesRef,
+} from "@/data/home";
 import Image from "next/image";
 import { ArrowRight, CheckCircle } from "lucide-react";
 import { useState } from "react";
 import Link from "next/link";
-import sora from "@/public/fonts/Sora";
+import sora from "@/public/assets/fonts/Sora";
 
 export default function ServicesSection() {
   const [activeService, setActiveService] = useState("Digital Marketing");
-  const currentService = servicesRef.find(service => service.title === activeService);
+  const currentService = servicesRef.find(
+    (service) => service.title === activeService
+  );
 
   return (
     <section className="container mx-auto py-12 px-4 text-center items-center">
@@ -67,34 +73,38 @@ export default function ServicesSection() {
               {serviceSectionData.map((service, index) => (
                 <div key={index} className="flex items-start gap-2">
                   <CheckCircle className="text-blue-500 w-5 h-5 mt-1" />
-                  <span className="text-gray-800 text-sm sm:text-base">{service.title}</span>
+                  <span className="text-gray-800 text-sm sm:text-base">
+                    {service.title}
+                  </span>
                 </div>
               ))}
             </div>
           </div>
 
-          {
-            currentService && (
-
-              <Link
-                href={currentService.link}
-                className="flex items-center bg-[#1C3FAA] rounded-xl px-4 py-2 w-fit justify-center gap-2 text-white mt-4"
-              >
-                <p>Learn More</p>
-                <span className="inline-block border-2 rounded-full p-1">
-                  <ArrowRight width={14} height={14} />
-                </span>
-              </Link>
-            )
-          }
-
+          {currentService && (
+            <Link
+              href={currentService.link}
+              className="flex items-center bg-[#1C3FAA] rounded-xl px-4 py-2 w-fit justify-center gap-2 text-white mt-4"
+            >
+              <p>Learn More</p>
+              <span className="inline-block border-2 rounded-full p-1">
+                <ArrowRight width={14} height={14} />
+              </span>
+            </Link>
+          )}
         </motion.div>
 
         {/* Image */}
         <motion.div
           initial={{ opacity: 0, y: 40, scale: 0.95 }}
           whileInView={{ opacity: 1, y: 0, scale: 1 }}
-          transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1], type: "spring", stiffness: 60, damping: 15}}
+          transition={{
+            duration: 0.9,
+            ease: [0.22, 1, 0.36, 1],
+            type: "spring",
+            stiffness: 60,
+            damping: 15,
+          }}
           viewport={{ once: true }}
           className="w-full max-w-2xl flex justify-center"
         >
@@ -110,5 +120,5 @@ export default function ServicesSection() {
     </section>
   );
 }
-//created by Omodara Ayodele 
+//created by Omodara Ayodele
 //github: OmodaraAyo

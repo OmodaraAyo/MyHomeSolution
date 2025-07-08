@@ -5,7 +5,7 @@ import { pricingPlanData } from "@/data/home";
 import { Check } from "lucide-react";
 import { DisplayNAICurrency } from "@/helpers/displayCurrency";
 import { useState, useEffect } from "react";
-import sora from "@/public/fonts/Sora";
+import sora from "@/public/assets/fonts/Sora";
 
 export default function PricingPlanSection() {
   const [isLargeScreen, setIsLargeScreen] = useState(false);
@@ -42,16 +42,33 @@ export default function PricingPlanSection() {
           return (
             <motion.div
               key={index}
-              initial={ isLargeScreen ? { opacity: 0, x: 20 } : { opacity: 0, y: 20 }}
-              whileInView={ isLargeScreen ? { opacity: 1, x: 0 } : { opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 + index * 0.15, ease: "easeIn",}}
+              initial={
+                isLargeScreen ? { opacity: 0, x: 20 } : { opacity: 0, y: 20 }
+              }
+              whileInView={
+                isLargeScreen ? { opacity: 1, x: 0 } : { opacity: 1, y: 0 }
+              }
+              transition={{
+                duration: 0.6,
+                delay: 0.3 + index * 0.15,
+                ease: "easeIn",
+              }}
               viewport={{ once: true }}
               className={`p-6 rounded-xl text-left w-full lg:w-[320px] mx-auto border transition-all duration-300 flex flex-col gap-3 ${
-                isPlatinum ? "bg-[#102460] text-white border-[#102460]" : "bg-white text-[#0C0A08] border-white"}`}
-              style={{ boxShadow: isPlatinum ? "0 0 30px 5px rgba(189, 203, 247, 1)" : "0 18px 30px rgba(0,0,0,0.15)"}}
+                isPlatinum
+                  ? "bg-[#102460] text-white border-[#102460]"
+                  : "bg-white text-[#0C0A08] border-white"
+              }`}
+              style={{
+                boxShadow: isPlatinum
+                  ? "0 0 30px 5px rgba(189, 203, 247, 1)"
+                  : "0 18px 30px rgba(0,0,0,0.15)",
+              }}
             >
               <div>
-                <h1 className={`text-2xl font-semibold mb-1 ${sora.className}`}>{data.plan}</h1>
+                <h1 className={`text-2xl font-semibold mb-1 ${sora.className}`}>
+                  {data.plan}
+                </h1>
                 <p className="text-sm">{data.planDescription}</p>
               </div>
 
@@ -93,7 +110,9 @@ export default function PricingPlanSection() {
       </div>
 
       <div className="flex flex-col lg:flex-row items-center justify-center gap-2.5 lg:gap-7 mt-15">
-        <p className={`font-medium text-sm lg:text-2xl text-[#4A4A4A] ${sora.className}`}>
+        <p
+          className={`font-medium text-sm lg:text-2xl text-[#4A4A4A] ${sora.className}`}
+        >
           Explore more options?
         </p>
         <button className="bg-[#102460] text-white px-6 py-3 rounded-xl font-semibold text-sm lg:text-base hover:opacity-90 transition cursor-pointer">
@@ -104,5 +123,5 @@ export default function PricingPlanSection() {
   );
 }
 
-//created by Omodara Ayodele 
+//created by Omodara Ayodele
 //github: OmodaraAyo

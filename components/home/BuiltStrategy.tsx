@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { strategyData } from "@/data/home";
 import Image from "next/image";
-import sora from "@/public/fonts/Sora";
+import sora from "@/public/assets/fonts/Sora";
 export default function BuiltStrategySection() {
   return (
     <section className="container mx-auto py-16 px-4 text-center flex flex-col lg:flex-row items-start justify-between">
@@ -12,7 +12,9 @@ export default function BuiltStrategySection() {
         viewport={{ once: true }}
         className="mb-8 md:max-w-full lg:max-w-lg text-left md:text-center lg:text-left w-full"
       >
-        <p className={`text-2xl md:text-3xl font-[600] text-[#333333] mt-2 lg:max-w-[20rem] lg:mt-3 ${sora.className}`}>
+        <p
+          className={`text-2xl md:text-3xl font-[600] text-[#333333] mt-2 lg:max-w-[20rem] lg:mt-3 ${sora.className}`}
+        >
           Built to Deliver More Than Just Clicks
         </p>
       </motion.div>
@@ -48,5 +50,5 @@ export default function BuiltStrategySection() {
   );
 }
 
-//created by Omodara Ayodele 
+//created by Omodara Ayodele
 //github: OmodaraAyo

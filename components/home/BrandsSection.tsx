@@ -1,5 +1,5 @@
 import { brandData } from "@/data/home";
-import sora from "@/public/fonts/Sora";
+import sora from "@/public/assets/fonts/Sora";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
@@ -15,7 +15,7 @@ export default function BrandsSection() {
       >
         Trusted by Local Service Legends and Global Hosts
       </motion.h2>
-      
+
       <div className="relative w-full overflow-hidden h-[80px]">
         <div className="absolute flex">
           {/* Main Items - original items */}
@@ -32,15 +32,27 @@ export default function BrandsSection() {
                 <Image
                   src={brand.image}
                   alt={`Brand logo ${index + 1}`}
-                  width={brand.title === "Zoom" || brand.title === "Webflow" || brand.title === "Slack" ? 100 : 132}
-                  height={brand.title === "Zoom" || brand.title === "Webflow" || brand.title === "Slack" ? 50 : 62}
+                  width={
+                    brand.title === "Zoom" ||
+                    brand.title === "Webflow" ||
+                    brand.title === "Slack"
+                      ? 100
+                      : 132
+                  }
+                  height={
+                    brand.title === "Zoom" ||
+                    brand.title === "Webflow" ||
+                    brand.title === "Slack"
+                      ? 50
+                      : 62
+                  }
                   className="object-contain"
-                  style={{ height: 'auto' }}
+                  style={{ height: "auto" }}
                 />
               </motion.div>
             ))}
           </div>
-          
+
           {/* Duplicate Items*/}
           <div className="flex gap-12 pr-12 animate-marquee">
             {brandData.map((brand, index) => (
@@ -51,8 +63,20 @@ export default function BrandsSection() {
                 <Image
                   src={brand.image}
                   alt={`Brand logo duplicate ${index + 1}`}
-                  width={brand.title === "Zoom" || brand.title === "Webflow" || brand.title === "Slack" ? 100 : 132}
-                  height={brand.title === "Zoom" || brand.title === "Webflow" || brand.title === "Slack" ? 50 : 62}
+                  width={
+                    brand.title === "Zoom" ||
+                    brand.title === "Webflow" ||
+                    brand.title === "Slack"
+                      ? 100
+                      : 132
+                  }
+                  height={
+                    brand.title === "Zoom" ||
+                    brand.title === "Webflow" ||
+                    brand.title === "Slack"
+                      ? 50
+                      : 62
+                  }
                   className="object-contain"
                 />
               </div>
@@ -71,5 +95,5 @@ export default function BrandsSection() {
   );
 }
 
-//created by Omodara Ayodele 
+//created by Omodara Ayodele
 //github: OmodaraAyo

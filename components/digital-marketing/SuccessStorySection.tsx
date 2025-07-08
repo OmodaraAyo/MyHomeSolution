@@ -1,14 +1,14 @@
 import { motion } from "framer-motion";
-import { buildLegacyData } from "@/data/home";
 import sora from "@/public/assets/fonts/Sora";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import { successStorySectionData } from "@/data/digital-marketing";
 
-export default function BuildLegacy() {
+export default function SuccessStorySection() {
   return (
     <section className="py-12 px-4 items-center bg-[#E4EBFF] justify-center">
-      <div className="container mx-auto bg-white w-full lg:max-w-5xl rounded-xl flex flex-col items-center justify-center py-12 text-center">
-        {buildLegacyData.map((data, index) => (
+      <div className="container mx-auto bg-white w-full md:max-w-[78rem] rounded-xl flex flex-col items-center justify-center py-12 text-center">
+        {successStorySectionData.map((data, index) => (
           <motion.div
             key={index}
             initial={{ opacity: 0, y: 20 }}
@@ -32,7 +32,7 @@ export default function BuildLegacy() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.3 }}
-                className={`text-sm font-semibold mt-2 flex-grow text-[#333333] max-w-[580]`}
+                className={`text-xs lg:text-[13.5px] font-medium mt-2 flex-grow text-[#333333] max-w-[580]`}
               >
                 {data.description}
               </motion.p>

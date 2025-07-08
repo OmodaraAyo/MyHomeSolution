@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 import { blogData, blogImages, howWeWorkImage } from "@/data/home";
 import Image from "next/image";
 import { useState } from "react";
-import sora from "@/public/fonts/Sora";
-import { ArrowUpRight } from 'lucide-react';
+import sora from "@/public/assets/fonts/Sora";
+import { ArrowUpRight } from "lucide-react";
 
 export default function BlogSection() {
   const [isHovered, setIsHovered] = useState<number | null>(0);
@@ -25,7 +25,9 @@ export default function BlogSection() {
         viewport={{ once: true }}
         className={`text-2xl sm:text-3xl font-semibold text-[#333333] mb-17 px-2 md:px-0 max-w-sm ${sora.className}`}
       >
-        <p className="inline font-normal text-sm border px-4 py-1 rounded-full text-[#535862] border-[#D5D7DA]">Blog</p>
+        <p className="inline font-normal text-sm border px-4 py-1 rounded-full text-[#535862] border-[#D5D7DA]">
+          Blog
+        </p>
         <p className="mt-3 pl-2 md:pl-0">Our latest News & Recources</p>
       </motion.h2>
 
@@ -54,11 +56,19 @@ export default function BlogSection() {
 
           <div className="rounded-tr-2xl cursor-auto">
             <p className="flex w-full mb-3">
-                <span className="border px-4 py-1 rounded-full text-[#535862] border-[#D5D7DA]">Growth marketing</span>
-                <span className="text-[#1C3FAA] w-fit ml-auto"><ArrowUpRight/></span>
+              <span className="border px-4 py-1 rounded-full text-[#535862] border-[#D5D7DA]">
+                Growth marketing
+              </span>
+              <span className="text-[#1C3FAA] w-fit ml-auto">
+                <ArrowUpRight />
+              </span>
             </p>
 
-            <p className={`text-lg font-semibold max-w-[490] text-ellipsis line-clamp-2 ${sora.className}`}>Why Your SEO Isn’t Working and How to Fix It</p>
+            <p
+              className={`text-lg font-semibold max-w-[490] text-ellipsis line-clamp-2 ${sora.className}`}
+            >
+              Why Your SEO Isn’t Working and How to Fix It
+            </p>
           </div>
         </motion.div>
 
@@ -86,20 +96,28 @@ export default function BlogSection() {
               }}
               className="p-6 flex-shrink-0 border-b rounded-tr-2xl text-start gap-2 snap-start cursor-auto"
             >
-
               <div className="flex gap-4 w-full mb-3">
-                {
-                    data.trends.map((trend, idx) => (
-                        <div key={idx} className={`border px-4 py-1 rounded-full text-ellipsis line-clamp-1 ${isHovered === index ? "text-white border-white": "text-[#535862] border-[#D5D7DA]"}`}>
-                            <p>{trend}</p>
-                        </div>
-                    ))
-                }
+                {data.trends.map((trend, idx) => (
+                  <div
+                    key={idx}
+                    className={`border px-4 py-1 rounded-full text-ellipsis line-clamp-1 ${
+                      isHovered === index
+                        ? "text-white border-white"
+                        : "text-[#535862] border-[#D5D7DA]"
+                    }`}
+                  >
+                    <p>{trend}</p>
+                  </div>
+                ))}
                 <h1 className="w-fit ml-auto">
-                    <ArrowUpRight color={isHovered === index ? "#FFFFFF"  :"#1C3FAA"}/>
+                  <ArrowUpRight
+                    color={isHovered === index ? "#FFFFFF" : "#1C3FAA"}
+                  />
                 </h1>
               </div>
-              <h1 className={`text-lg font-semibold  max-w-[490] text-ellipsis line-clamp-2 ${sora.className}`}>
+              <h1
+                className={`text-lg font-semibold  max-w-[490] text-ellipsis line-clamp-2 ${sora.className}`}
+              >
                 {data.description}
               </h1>
             </motion.div>
@@ -110,5 +128,5 @@ export default function BlogSection() {
   );
 }
 
-//created by Omodara Ayodele 
+//created by Omodara Ayodele
 //github: OmodaraAyo

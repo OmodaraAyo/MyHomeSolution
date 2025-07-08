@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import sora from "@/public/fonts/Sora";
+import sora from "@/public/assets/fonts/Sora";
 import { contactInfos } from "@/data/home";
 import { useState } from "react";
 
@@ -37,7 +37,8 @@ export default function LetsTalk() {
           <div className="flex flex-col gap-2 mb-8">
             <p className={`font-bold text-xl ${sora.className}`}>Let’s Talk</p>
             <p className="font-normal text-sm">
-              We’re here to listen—reach out and let’s explore new possibilities together
+              We’re here to listen—reach out and let’s explore new possibilities
+              together
             </p>
           </div>
 
@@ -144,5 +145,5 @@ export default function LetsTalk() {
   );
 }
 
-//created by Omodara Ayodele 
+//created by Omodara Ayodele
 //github: OmodaraAyo

@@ -2,7 +2,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { homeData } from "@/data/home";
 import Link from "next/link";
-import sora from "@/public/fonts/Sora";
+import sora from "@/public/assets/fonts/Sora";
 
 export default function HeroSection() {
   return (
@@ -34,7 +34,6 @@ export default function HeroSection() {
         />
       </div>
 
-
       {/* Overlay with second image */}
       <div className="absolute inset-0 bg-black/55 opacity-50">
         <Image
@@ -52,8 +51,12 @@ export default function HeroSection() {
         transition={{ duration: 0.8, ease: "easeOut", delay: 0.8 }}
         className="max-w-4xl mx-auto absolute inset-0 right-0 left-0 top-[11rem] will-change-transform"
       >
-        <div className={`relative z-10 flex flex-col items-center justify-center gap-6`}>
-          <h1 className={`text-4xl md:text-6xl font-bold mb-6 leading-20 ${sora.className}`}>
+        <div
+          className={`relative z-10 flex flex-col items-center justify-center gap-6`}
+        >
+          <h1
+            className={`text-4xl md:text-6xl font-bold mb-6 leading-20 ${sora.className}`}
+          >
             We Help Local Home Service Brands Go 10X Bigger
           </h1>
           <div className="hidden md:block w-fit ml-auto absolute top-39 right-18 px-8">
@@ -112,5 +115,5 @@ export default function HeroSection() {
   );
 }
 
-//created by Omodara Ayodele 
+//created by Omodara Ayodele
 //github: OmodaraAyo
