@@ -149,5 +149,25 @@ export const videoTestimonialSectionData = [
 //created by Omodara Ayodele 
 //github: OmodaraAyo
 
+export const prServiceSectionData = [
+  {
+    id: 1,
+    title: "Guest posts and backlinks can increase SEO authority by 30-60%",
+  },
+  {
+    id: 2,
+    title: "PR boosts perceived credibility, increasing high-intent visits",
+  },
+  {
+    id: 3,
+    title: "Excellent for regional/national exposure for high-ticket services",
+  }
+];
+
+//created by Omodara Ayodele 
+//github: OmodaraAyo
+
+
+
 
 

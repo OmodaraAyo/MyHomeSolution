@@ -8,7 +8,7 @@ import LocalSearchOp from '@/components/digital-marketing/LocalSearchOp'
 import PPCManagementSection from '@/components/digital-marketing/PPC-Management'
 import SearchEngineSection from '@/components/digital-marketing/SearchEngineSection'
 import SocialMediaMarketingSection from '@/components/digital-marketing/SocialMediaMarketing'
-import SuccessStorySection from '@/components/digital-marketing/SuccessStorySection'
+import SuccessStorySection from '@/reusables/SuccessStorySection'
 import React from 'react'
 
 export default function DigitalMarketingPage() {
@@ -23,7 +23,7 @@ export default function DigitalMarketingPage() {
      <LeadGenerationSection/>
      <AdsSection/>
      <LocalSearchOp/>
-     <SuccessStorySection/>
+     <SuccessStorySection link="/schedule-consultation"/>
     </>
   )
 }

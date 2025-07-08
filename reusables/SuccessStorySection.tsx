@@ -4,7 +4,9 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { successStorySectionData } from "@/data/digital-marketing";
 
-export default function SuccessStorySection() {
+
+export default function SuccessStorySection(props: {link: string}) {
+    const { link } = props
   return (
     <section className="py-12 px-4 items-center bg-[#E4EBFF] justify-center">
       <div className="container mx-auto bg-white w-full md:max-w-[78rem] rounded-xl flex flex-col items-center justify-center py-12 text-center">
@@ -41,7 +43,7 @@ export default function SuccessStorySection() {
         ))}
 
         <Link
-          href="/schedule-consultation"
+          href={link}
           className="flex items-center bg-[#1C3FAA] rounded-xl px-4 py-2 w-fit justify-center gap-2 text-white mt-4 text-[14px] md:text-base"
         >
           <p>Schedule a Consultation</p>
