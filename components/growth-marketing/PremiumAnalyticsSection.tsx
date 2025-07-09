@@ -9,7 +9,7 @@ import { premiumAnalyticsSectionData } from "@/data/growth-marketing";
 export default function PremiumAnalyticsSection() {
   return (
     <section className="container mx-auto py-12 px-4 text-center items-center lg:mt-10">
-      <div className="flex flex-col lg:flex-row items-start gap-12 lg:gap-10 bg-[#E9F9F1] rounded-2xl p-8 lg:p-13 shadow-lg">
+      <div className="flex flex-col lg:flex-row items-start gap-12 lg:gap-10 bg-[#FFEEFD] rounded-2xl p-8 lg:p-13 shadow-lg">
         {/* Text Content */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}

@@ -5,6 +5,7 @@ import BookingIntegrationSection from '@/components/growth-marketing/BookingInte
 import ChatbotsAutomationSection from '@/components/growth-marketing/ChatbotsAutomationSection'
 import GHeroSection from '@/components/growth-marketing/GHeroSection'
 import MobileDevelopmentSection from '@/components/growth-marketing/MobileDevelopment'
+import PremiumAnalyticsSection from '@/components/growth-marketing/PremiumAnalyticsSection'
 import RateOptSection from '@/components/growth-marketing/RateOptSection'
 import SuccessStorySection from '@/reusables/SuccessStorySection'
 import React from 'react'
@@ -19,6 +20,7 @@ export default function page() {
     <BookingIntegrationSection/>
     <AppointmentManagementSection/>
     <AIAnalysisSection/>
+    <PremiumAnalyticsSection/>
     <SuccessStorySection link="/schedule-consultation"/>
     </>
   )
