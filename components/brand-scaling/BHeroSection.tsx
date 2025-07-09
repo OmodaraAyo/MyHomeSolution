@@ -14,7 +14,7 @@ export default function BHeroSection() {
       className="relative bg-primary text-black pt-36 pb-32 px-4"
     >
       {/* Animated Gradient */}
-      <div className="hidden md:block absolute inset-0 pointer-events-none -z-10 overflow-hidden">
+      <div className="absolute inset-0 pointer-events-none -z-10 overflow-hidden">
         <div className="container mx-auto relative h-full">
           <motion.div
             className="absolute top-0 -left-32 w-[24rem] h-[24rem] rounded-full bg-gradient-to-r from-[#1C3FAACC] to-[#B2C5FF61] blur-3xl"
@@ -31,7 +31,7 @@ export default function BHeroSection() {
             }}
           />
           <motion.div
-            className="absolute bottom-10 right-0 xl:-right-24 w-[24rem] h-[24rem] rounded-full bg-gradient-to-r from-[#B2C5FF61] to-[#1C3FAACC] blur-3xl"
+            className="hidden md:block absolute bottom-10 right-0 xl:-right-24 w-[24rem] h-[24rem] rounded-full bg-gradient-to-r from-[#B2C5FF61] to-[#1C3FAACC] blur-3xl"
             animate={{
               y: [0, 25, 0, -25, 0],
               x: [0, -20, 0, 20, 0],

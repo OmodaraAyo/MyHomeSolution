@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import sora from "@/public/assets/fonts/Sora";
 import { ArrowRight } from "lucide-react";
-import { heroSectionData } from "@/data/digital-marketing";
+import { heroSectionData } from "@/data/growth-marketing";
 
-export default function DHeroSection() {
+export default function GHeroSection() {
   return (
     <motion.section
       initial={{ opacity: 0 }}
@@ -47,7 +47,7 @@ export default function DHeroSection() {
         </div>
       </div>
 
-      {/* Optional white overlay — reduced opacity */}
+      {/* Optional white overlay — slightly reduced opacity for visibility */}
       <div className="absolute inset-0 bg-white opacity-10 z-10 pointer-events-none"></div>
 
       {/* Main content */}
@@ -61,22 +61,15 @@ export default function DHeroSection() {
           <h1
             className={`text-lg font-semibold leading-tight text-[#606060] ${sora.className}`}
           >
-            DIGITAL MARKETING
+            GROWTH MARKETING
           </h1>
           <p
-            className={`text-[1.6rem] md:text-5xl font-bold leading-11 md:leading-20 w-full md:max-w-4xl ${sora.className}`}
+            className={`text-[1.6rem] md:text-5xl font-bold leading-11 md:leading-20 w-full md:max-w-2xl ${sora.className}`}
           >
-            Fuel Visibility.
-            <br />
-            Drive Demand.
-            <br />
-            Convert with Confidence.
+            Smarter Systems. Scalable Growth. Measurable Results.
           </p>
           <p className="max-w-[42.2rem] text-[#606060]">
-            At MyHomeSolution, we help home service businesses thrive online
-            with tailored digital marketing strategies. From boosting visibility
-            to driving qualified leads, we focus on real growth in a competitive
-            market.
+            Growth marketing goes beyond campaigns. We automate operations, personalize experiences, and use data to unlock next-level efficiency and revenue.
           </p>
 
           <Link

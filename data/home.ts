@@ -457,9 +457,9 @@ export const footerLinks = {
     { label: "How we work", href: "/how-we-work" },
   ],
   services: [
-    { label: "Digital Marketing", href: "/services/digital-marketing" },
-    { label: "Brand Scaling", href: "/services/brand-scaling" },
-    { label: "Growth Marketing", href: "/services/growth-marketing" },
+    { label: "Digital Marketing", href: "/digital-marketing" },
+    { label: "Brand Scaling", href: "/brand-scaling" },
+    { label: "Growth Marketing", href: "/growth-marketing" },
   ],
   resources: [
     { label: "Blogs", href: "/blogs" },
