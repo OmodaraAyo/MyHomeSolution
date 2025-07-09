@@ -47,7 +47,7 @@ export default function BHeroSection() {
         </div>
       </div>
 
-      {/* Optional white overlay — slightly reduced opacity for visibility */}
+      {/* white overlay */}
       <div className="absolute inset-0 bg-white opacity-10 z-10 pointer-events-none"></div>
 
       {/* Main content */}

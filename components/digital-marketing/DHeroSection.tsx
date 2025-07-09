@@ -47,7 +47,7 @@ export default function DHeroSection() {
         </div>
       </div>
 
-      {/* Optional white overlay — reduced opacity */}
+      {/* white overlay*/}
       <div className="absolute inset-0 bg-white opacity-10 z-10 pointer-events-none"></div>
 
       {/* Main content */}

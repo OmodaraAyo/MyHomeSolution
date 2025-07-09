@@ -51,9 +51,7 @@ export default function HeroSection() {
         transition={{ duration: 0.8, ease: "easeOut", delay: 0.8 }}
         className="max-w-4xl mx-auto absolute inset-0 right-0 left-0 top-[11rem] will-change-transform"
       >
-        <div
-          className={`relative z-10 flex flex-col items-center justify-center gap-6`}
-        >
+        <div className={`relative z-10 flex flex-col items-center justify-center gap-6`}>
           <h1
             className={`text-4xl md:text-6xl font-bold mb-6 leading-20 ${sora.className}`}
           >
