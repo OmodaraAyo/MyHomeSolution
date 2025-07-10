@@ -35,14 +35,14 @@ export default function LetsTalk() {
           className="bg-gradient-to-tr from-[#09153C] to-[#17389D] p-4 text-left text-white w-full md:max-w-md rounded-2xl relative overflow-hidden"
         >
           <div className="flex flex-col gap-2 mb-8">
-            <p className={`font-bold text-xl ${sora.className}`}>Let’s Talk</p>
+            <p className={`font-bold text-xl tracking-widest ${sora.className}`}>Let’s Talk</p>
             <p className="font-normal text-sm">
               We’re here to listen—reach out and let’s explore new possibilities
               together
             </p>
           </div>
 
-          <div className="space-y-5">
+          <div className="space-y-9">
             {contactInfos.map((info, index) => (
               <motion.div
                 key={index}
@@ -50,7 +50,7 @@ export default function LetsTalk() {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.4, delay: 0.2 + index * 0.1 }}
                 viewport={{ once: true }}
-                className="flex gap-3 items-center font-normal text-[15px]"
+                className="flex gap-3 items-center font-normal text-[15px] tracking-wide"
               >
                 <info.icon className="w-5 h-5" />
                 <a href={info.href} target="_blank" rel="noopener noreferrer">
@@ -66,7 +66,7 @@ export default function LetsTalk() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
           viewport={{ once: true }}
-          className="md:px-4 w-full"
+          className="px-2 md:px-4 w-full space-y-5 md:space-y-2"
         >
           {/* Fullname */}
           <div className="flex flex-col">
@@ -136,7 +136,7 @@ export default function LetsTalk() {
             />
           </div>
 
-          <button className="block w-fit ml-auto bg-[#1C3FAA] p-2 rounded-lg text-white font-semibold text-center md:text-base cursor-pointer">
+          <button className="block w-full md:w-fit md:ml-auto bg-[#1C3FAA] p-2 rounded-lg text-white font-semibold text-center md:text-base cursor-pointer">
             Send Message
           </button>
         </motion.form>

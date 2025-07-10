@@ -56,7 +56,7 @@ export default function HeroSection4() {
             ABOUT US
           </h1>
           <p
-            className={`text-[1.6rem] md:text-5xl font-bold leading-11 md:leading-20 w-full max-w-80 sm:max-w-2xl ${sora.className}`}
+            className={`text-[1.6rem] md:text-5xl font-bold leading-11 md:leading-20 w-full max-w-80 sm:max-w-2xl lg:max-w-3xl ${sora.className}`}
           >
             Helping Home Service Businesses Grow Smarter, Scale Faster, and
             Stand Out

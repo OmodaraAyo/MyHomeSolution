@@ -27,11 +27,11 @@ export default function MeetTheTeamSection() {
         viewport={{ once: true }}
         className="container mx-auto"
       >
-        <div className={`mb-8 ${sora.className}`}>
-          <h2 className="text-[29px] font-bold text-[#333333]">
+        <div className={`mb-4 `}>
+          <h2 className={`text-xl lg:text-3xl font-bold text-[#333333] ${sora.className}`}>
             Meet the Team
           </h2>
-          <p className="text-sm text-[#8E8E8E] mt-3">
+          <p className=" text-sm lg:text-md text-[#8E8E8E] mt-3">
             Meet the growth architects behind MyHomeSolution.
           </p>
         </div>

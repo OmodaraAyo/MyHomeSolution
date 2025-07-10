@@ -9,8 +9,8 @@ import BuiltStrategySection from "@/components/home/BuiltStrategy";
 import CaseStudiesSection from "@/components/home/CaseStudies";
 import BuildLegacy from "@/components/home/BuildLegacy";
 import BlogSection from "@/components/home/Blog";
-import FoundersTestimonialSection from "@/components/home/FoundersTestimonial";
-import LetsTalk from "@/components/home/LetsTalk";
+import FoundersTestimonialSection from "@/reusables/FoundersTestimonial";
+import LetsTalk from "@/reusables/LetsTalk";
 
 export default function Home() {
   return (

@@ -80,7 +80,7 @@ export default function FoundersTestimonialSection() {
               </div>
 
               <div>
-                <h3 className="text-xl sm:text-2xl font-[600] text-[#4A4A4A] min-w-full font-semibold max-w-[690] mb-5">
+                <h3 className="text-xl sm:text-2xl text-[#4A4A4A] min-w-full font-semibold max-w-[690] mb-5">
                   {data.description}
                 </h3>
                 <div className="flex items-center gap-3">
