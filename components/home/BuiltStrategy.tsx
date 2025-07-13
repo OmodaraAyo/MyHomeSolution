@@ -27,7 +27,7 @@ export default function BuiltStrategySection() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.2 }}
             viewport={{ once: true }}
-            style={{ boxShadow: "-3px 3px 5px rgba(0,0,0,0.15)" }}
+            style={{ boxShadow: "-2px 3px 5px rgba(0,0,0,0.15)" }}
           >
             <div className="w-12 h-12 bg-[#FFF8E5] mb-4 rounded-full flex items-center justify-center">
               <Image

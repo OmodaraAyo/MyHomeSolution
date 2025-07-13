@@ -58,9 +58,7 @@ export default function GHeroSection() {
         className="container mx-auto px-8 py-4 text-left relative z-20"
       >
         <div className="flex flex-col items-start gap-1 w-full">
-          <h1
-            className={`text-lg font-semibold leading-tight text-[#606060] ${sora.className}`}
-          >
+          <h1 className={`text-lg font-semibold leading-tight text-[#606060] ${sora.className}`}>
             GROWTH MARKETING
           </h1>
           <p

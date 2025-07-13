@@ -1,12 +1,11 @@
 import { motion } from "framer-motion";
-import { caseStudiesData, caseStudiesImages } from "@/data/home";
-import Image from "next/image";
 import sora from "@/public/assets/fonts/Sora";
 import { useState, useEffect } from "react";
 import { Check, ArrowRight } from "lucide-react";
 import Link from "next/link";
+import { caseStudyData } from "@/data/case-study";
 
-export default function CaseStudiesSection() {
+export default function CaseStudySection() {
   const [isLargeScreen, setIsLargeScreen] = useState(false);
 
   useEffect(() => {
@@ -20,20 +19,7 @@ export default function CaseStudiesSection() {
   }, []);
 
   return (
-    <section className="py-16 md:px-4 text-center relative h-fit min-h-[1000px] md:min-h-[1060px]">
-      {/* Background Image */}
-      <div className="absolute inset-0 w-full h-full z-10 ">
-        <Image
-          src={caseStudiesImages[0].image}
-          alt=""
-          fill
-          style={{ objectFit: "cover" }}
-        />
-      </div>
-
-      {/* Overlay Layer */}
-      <div className="absolute inset-0 w-full h-full bg-[#102460A3] z-20" />
-
+    <section className="py-16 md:px-4 text-center relative h-fit min-h-[1000px] md:min-h-[1060px] bg-[#FBFBFB]">
       <motion.div
         initial={{ opacity: 0, y: 60 }}
         animate={{ opacity: 1, y: 0 }}
@@ -41,22 +27,9 @@ export default function CaseStudiesSection() {
         viewport={{ once: true }}
         className="relative z-30 container mx-auto px-5 md:px-12 lg:px-48"
       >
-        <div className={`text-center mb-16 ${sora.className}`}>
-          <p className="text-lg font-[400] text-white">Case Studies</p>
-          <p className="text-[29px] font-[600] mt-2 max-w-xl mx-auto text-white">
-            We Don’t Just Build Brands, We Drive Real Results
-          </p>
-          <p className="text-sm font-light text-[#E8E8E8] max-w-2xl mx-auto mt-4">
-            At MyHomeSolution, we help home service businesses go from invisible
-            to unforgettable. From short-term rentals to full-service
-            contractors, we build stunning websites, automate growth, and turn
-            clicks into clients.
-          </p>
-        </div>
-
         {/* Grid Section */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:p-2 items-start">
-          {caseStudiesData.map((data, index) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 lg:p-2 items-start">
+          {caseStudyData.map((data, index) => (
             <motion.div
               key={index}
               initial={
@@ -71,7 +44,8 @@ export default function CaseStudiesSection() {
                 ease: "easeIn",
               }}
               viewport={{ once: true }}
-              className="rounded-xl w-full mx-auto border border-white transition-all duration-300 bg-white text-[#0C0A08] overflow-hidden flex flex-col  min-h-[420px]"
+              className="rounded-xl w-full mx-auto transition-all duration-300 bg-white text-[#0C0A08] overflow-hidden flex flex-col min-h-[420px]"
+              style={{ boxShadow: "0px 0px 13px rgba(0, 0, 0, 0.1)" }}
             >
               <div className="w-full py-20 rounded-xl bg-[#D9D9D9]"></div>
 
@@ -116,11 +90,6 @@ export default function CaseStudiesSection() {
               </div>
             </motion.div>
           ))}
-        </div>
-        <div className="flex flex-col lg:flex-row items-center justify-center gap-2.5 lg:gap-7 mt-15">
-          <button className="bg-[#102460] text-white px-6 py-3 rounded-xl font-semibold text-sm lg:text-base hover:opacity-90 transition cursor-pointer">
-            Discover more case studies
-          </button>
         </div>
       </motion.div>
     </section>

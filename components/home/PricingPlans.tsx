@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { pricingPlanData } from "@/data/home";
 import { Check } from "lucide-react";
-import { DisplayNAICurrency } from "@/helpers/displayCurrency";
+import { DisplayUSDCurrency } from "@/helpers/displayCurrency";
 import { useState, useEffect } from "react";
 import sora from "@/public/assets/fonts/Sora";
 
@@ -76,7 +76,7 @@ export default function PricingPlanSection() {
                 {data.price ? (
                   <div className="flex items-end">
                     <h1 className={`font-bold text-4xl ${sora.className}`}>
-                      {DisplayNAICurrency(parseFloat(data.price))}
+                      {DisplayUSDCurrency(parseFloat(data.price))}
                     </h1>
                     <p className="font-medium text-lg tracking-wide">
                       /{data.duration}

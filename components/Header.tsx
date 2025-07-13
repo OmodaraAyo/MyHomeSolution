@@ -9,7 +9,7 @@ export default function Header() {
   const pathname = usePathname();
   const [isScrolled, setIsScrolled] = useState(false);
 
-  const isSpecialPage = ["/", "/pricing", "/about-us"].includes(pathname);
+  const isSpecialPage = ["/", "/pricing", "/about-us", "/case-study"].includes(pathname);
 
   useEffect(() => {
     const handleScroll = () => {

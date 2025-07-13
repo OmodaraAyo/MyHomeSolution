@@ -1,4 +1,3 @@
-
 export const aboutUsHeroSectionData = [
   {
     id: 0,
