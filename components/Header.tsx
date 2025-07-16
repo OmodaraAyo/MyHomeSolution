@@ -4,6 +4,7 @@ import { usePathname } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import { PhoneIncoming, ArrowRight, AlignJustify } from "lucide-react";
 import { navPages } from "@/data/navbar";
+import ArrowDropDown from "@/public/assets/icons/arrowDown";
 
 export default function Header() {
   const pathname = usePathname();
@@ -24,7 +25,7 @@ export default function Header() {
   ? isScrolled
     ? "bg-gradient-to-tr from-[#06102D] to-[#16389E] text-white"
     : "bg-transparent text-white"
-  : "bg-white text-black";
+  : "bg-white text-[#777777]";
 
   return (
     <nav
@@ -36,17 +37,21 @@ export default function Header() {
 
         {/* Desktop Navigation */}
         <div className="hidden xl:flex items-center justify-between w-full">
-          <div>
             {navPages.map((page, index) => (
-              <a
-                key={index}
-                href={page.href}
-                className="hover:text-blue-500 px-4 py-2"
-              >
-                {page.name}
-              </a>
+              <div key={index}>
+                {page.name === "Services" || page.name === "Industries" ? (
+                  <a href={page.href} className="hover:text-blue-500 px-4 py-2 flex items-center">
+                    <p>{page.name}</p>
+                    <ArrowDropDown/>
+                  </a>
+                ) : (
+                  <a href={page.href} className="hover:text-blue-500 px-4 py-2">
+                    {page.name}
+                  </a>
+                )}
+              </div>
             ))}
-          </div>
+         
 
           <div className="flex items-center">
             <Link

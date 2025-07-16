@@ -141,7 +141,7 @@ export const adsSectionData = [
   },
   {
     id: 2,
-    title: "Drive 2–4x return on ad spend through persuasive offers and creative funnels",
+    title: "Drive 2-4x return on ad spend through persuasive offers and creative funnels",
   },
   {
     id: 3,
