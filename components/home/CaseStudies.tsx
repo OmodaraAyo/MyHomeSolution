@@ -22,17 +22,17 @@ export default function CaseStudiesSection() {
   return (
     <section className="py-16 md:px-4 text-center relative h-fit min-h-[1000px] md:min-h-[1060px]">
       {/* Background Image */}
-      <div className="absolute inset-0 w-full h-full z-10 ">
-        <Image
-          src={caseStudiesImages[0].image}
-          alt=""
-          fill
-          style={{ objectFit: "cover" }}
-        />
+      <div className="absolute inset-0 w-full h-full z-10 bg-cover bg-center"
+      style={{
+        backgroundImage: `url(${caseStudiesImages[0].image})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center"
+      }}
+      >
       </div>
 
       {/* Overlay Layer */}
-      <div className="absolute inset-0 w-full h-full bg-[#102460A3] z-20" />
+      <div className="absolute inset-0 w-full h-full bg-[#102460A3] z-20 pointer-events-none" />
 
       <motion.div
         initial={{ opacity: 0, y: 60 }}
