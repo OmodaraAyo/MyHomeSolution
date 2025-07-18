@@ -1,16 +1,16 @@
 "use client";
-import BrandsSection from "@/components/home/BrandsSection";
-import ChampionsSection from "@/components/home/ChampionSection";
-import HeroSection from "@/components/home/Herosection";
-import HowWeWorkSection from "@/components/home/HowWeWork";
-import PricingPlanSection from "@/components/home/PricingPlans";
-import ServicesSection from "@/components/home/ServicesSection";
-import BuiltStrategySection from "@/components/home/BuiltStrategy";
-import CaseStudiesSection from "@/components/home/CaseStudies";
-import BuildLegacy from "@/components/home/BuildLegacy";
-import BlogSection from "@/components/home/Blog";
-import FoundersTestimonialSection from "@/reusables/FoundersTestimonial";
-import LetsTalk from "@/reusables/LetsTalk";
+import BrandsSection from "@/components/home/brandsSection";
+import ChampionsSection from "@/components/home/championSection";
+import HeroSection from "@/components/home/herosection";
+import HowWeWorkSection from "@/components/home/howWeWork";
+import PricingPlanSection from "@/components/home/pricingPlans";
+import ServicesSection from "@/components/home/servicesSection";
+import BuiltStrategySection from "@/components/home/builtStrategy";
+import CaseStudiesSection from "@/components/home/caseStudies";
+import BuildLegacy from "@/components/home/buildLegacy";
+import BlogSection from "@/components/home/blog";
+import FoundersTestimonialSection from "@/reusables/foundersTestimonial";
+import LetsTalk from "@/reusables/letsTalk";
 
 export default function Home() {
   return (
@@ -24,10 +24,10 @@ export default function Home() {
         <HowWeWorkSection />
         <PricingPlanSection />
         <CaseStudiesSection />
-        <BuildLegacy/>
-        <BlogSection/>
-        <FoundersTestimonialSection/>
-        <LetsTalk/>
+        <BuildLegacy />
+        <BlogSection />
+        <FoundersTestimonialSection />
+        <LetsTalk />
       </div>
     </>
   );

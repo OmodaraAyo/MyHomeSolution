@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import sora from "@/public/assets/fonts/Sora";
 import { blogSectionData } from "@/data/blog";
-import SeoResults from "./SeoResults";
+import SeoResults from "./seoResults";
 
 export default function HeroSection7() {
   return (

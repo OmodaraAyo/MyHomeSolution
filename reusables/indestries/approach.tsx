@@ -3,9 +3,10 @@ import { serviceSectionImages, caseStudiesImages } from "@/data/home";
 import Image from "next/image";
 import { CheckCircle } from "lucide-react";
 import sora from "@/public/assets/fonts/Sora";
-import { approachComponentData } from "@/data/industries";
+import { ApproachComponentProps } from "../types/types";
 
-export default function ApproachComponent() {
+export default function ApproachComponent(props: ApproachComponentProps) {
+  const { data } = props
   return (
     <section className="relative px-6 py-8 lg:p-13 shadow-lg rounded-2xl mt-[2.5rem]">
       {/* Background Image */}
@@ -34,7 +35,7 @@ export default function ApproachComponent() {
           </p>
 
           <div className="flex flex-col gap-y-3 font-semibold text-left">
-            {approachComponentData.map((service, index) => (
+            {data.map((service, index) => (
               <div key={index} className="flex items-start gap-3">
                 <CheckCircle className="text-blue-500 w-4 h-4 md:w-5 md:h-5 mt-1 flex-shrink-0" />
                 <div>
@@ -67,3 +68,6 @@ export default function ApproachComponent() {
     </section>
   );
 }
+
+//created by Omodara Ayodele
+//github: OmodaraAyo

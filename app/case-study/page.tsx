@@ -1,8 +1,8 @@
 "use client";
-import CaseStudySection from "@/components/case-study/CaseStudy";
-import HeroSection6 from "@/components/case-study/HeroSection6";
-import ResultsSection from "@/components/case-study/ResultsSection";
-import SuccessStorySection from "@/reusables/SuccessStorySection";
+import CaseStudySection from "@/components/case-study/caseStudy";
+import HeroSection6 from "@/components/case-study/heroSection6";
+import ResultsSection from "@/components/case-study/resultsSection";
+import SuccessStorySection from "@/reusables/successStorySection";
 import React from "react";
 
 export default function page() {
@@ -11,7 +11,7 @@ export default function page() {
       <HeroSection6 />
       <CaseStudySection />
       <ResultsSection />
-      <SuccessStorySection link="/schedule-consultation"/>
+      <SuccessStorySection link="/schedule-consultation" />
     </>
   );
 }

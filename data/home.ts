@@ -417,6 +417,7 @@ export const blogData = [
 
 export const foundersTestimonialData = [
   {
+    id: 0,
     founder: "Sarah Lee",
     company: "Founder of Catalog",
     description:
@@ -424,6 +425,61 @@ export const foundersTestimonialData = [
     image: "/assets/images/home/foundersTestimonialImage1.svg",
     title: "catalog"
   },
+  //  {
+  //   id: 1,
+  //   founder: "John Doe",
+  //   company: "CEO of Chromatools",
+  //   description:
+  //     "Their strategic support and industry connections played a crucial role in helping us scale faster and reach new milestones.",
+  //   image: "/assets/images/home/foundersTestimonialImage1.svg",
+  //   title: "catalog"
+  // },
+  //  {
+  //   id: 2,
+  //   founder: "Michael Tan",
+  //   company: "Co-Founder of Clandestine",
+  //   description:
+  //     "More than just funding—they provided invaluable mentorship, market insights, and hands-on guidance that shaped our business growth.",
+  //   image: "/assets/images/home/foundersTestimonialImage1.svg",
+  //   title: "catalog"
+  // },
+  //  {
+  //   id: 3,
+  //   founder: "Emily Carter",
+  //   company: "COO of Ephemeral",
+  //   description:
+  //     "With their strong backing and expertise, we successfully expanded into new markets and unlocked exciting opportunities for growth.",
+  //   image: "/assets/images/home/foundersTestimonialImage1.svg",
+  //   title: "catalog"
+  // },
+  //  {
+  //   id: 4,
+  //   founder: "David Wilson",
+  //   company: "CEO of Ollio",
+  //   description:
+  //     "They genuinely care about our long-term success, providing us with the right connections, resources, and strategies to navigate challenges.",
+  //   image: "/assets/images/home/foundersTestimonialImage1.svg",
+  //   title: "catalog"
+  // },
+  //  {
+  //   id: 5,
+  //   founder: "Rachel Kim",
+  //   company: "CEO of Watchtower",
+  //   description:
+  //     "Their investment went beyond capital—they provided strategic guidance, market insights, and key introductions that fueled our growth.",
+  //   image: "/assets/images/home/foundersTestimonialImage1.svg",
+  //   title: "catalog"
+  // },
+  //  {
+  //   id: 6,
+  //   founder: "Alex Turner",
+  //   company: "Founder of Stacked Lab",
+  //   description:
+  //     "With their expertise and strong network, we navigated challenges, secured funding, and scaled our business faster than expected.",
+  //   image: "/assets/images/home/foundersTestimonialImage1.svg",
+  //   title: "catalog"
+  // },
+  
 ]
 
 export const contactInfos = [
