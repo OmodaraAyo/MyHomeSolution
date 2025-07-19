@@ -5,13 +5,22 @@ export const rentalsSectionData = [
   },
   {
     title: "Tina A M",
-    image: "/assets/images/industries/profilePic.svg",
+    image: "/assets/images/founders/profilePic.svg",
   },
   {
     title: "Ready-to-Scale Systems",
     image: "/assets/images/industries/BFrame3.svg",
   },
 ];
+
+//created by Omodara Ayodele
+//github: OmodaraAyo
+
+export const propertyManagementHeroSectionData = {
+  title: "INDUSTRIES WE SERVE",
+  subTitle: "Property Management & Rental Solutions",
+  description: "Streamline operations, attract more bookings, and grow your rental business with smart digital strategies built for property managers and short-term rental owners."
+}
 
 //created by Omodara Ayodele
 //github: OmodaraAyo
@@ -334,4 +343,389 @@ export const turnoverServiceData = {
 //created by Omodara Ayodele
 //github: OmodaraAyo
 
+export const businessOwnerTestimonialsData = [
+  {
+    id: 0,
+    founder: "Sarah Lee",
+    company: "Founder of Catalog",
+    logo:"/assets/images/founders/catalogLogo.svg",
+    description:
+      "Thanks to their strategic investment and mentorship, we scaled our business 3x in just two years. Their industry insights and connections were game-changers for us.",
+    image: "/assets/images/founders/SarahLee.svg",
+    title: "catalog"
+  },
+   {
+    id: 1,
+    founder: "John Doe",
+    company: "CEO of Chromatools",
+    description:
+      "Their strategic support and industry connections played a crucial role in helping us scale faster and reach new milestones.",
+    image: "/assets/images/founders/JohnDoe.svg",
+    title: "catalog"
+  },
+   {
+    id: 2,
+    founder: "Michael Tan",
+    company: "Co-Founder of Clandestine",
+    description:
+      "More than just funding—they provided invaluable mentorship, market insights, and hands-on guidance that shaped our business growth.",
+    image: "/assets/images/founders/MichaelTan.svg",
+    title: "catalog"
+  },
+   {
+    id: 3,
+    founder: "Emily Carter",
+    company: "COO of Ephemeral",
+    description:
+      "With their strong backing and expertise, we successfully expanded into new markets and unlocked exciting opportunities for growth.",
+    image: "/assets/images/founders/EmilyCarter.svg",
+    title: "catalog"
+  },
+   {
+    id: 4,
+    founder: "David Wilson",
+    company: "CEO of Ollio",
+    description:
+      "They genuinely care about our long-term success, providing us with the right connections, resources, and strategies to navigate challenges.",
+    image: "/assets/images/founders/DavidWilson.svg",
+    title: "catalog"
+  },
+   {
+    id: 5,
+    founder: "Rachel Kim",
+    company: "CEO of Watchtower",
+    logo:"/assets/images/founders/watchTowerLogo.svg",
+    description:
+      "Their investment went beyond capital—they provided strategic guidance, market insights, and key introductions that fueled our growth.",
+    image: "/assets/images/founders/RachelKim.svg",
+    title: "catalog"
+  },
+   {
+    id: 6,
+    founder: "Alex Turner",
+    company: "Founder of Stacked Lab",
+    description:
+      "With their expertise and strong network, we navigated challenges, secured funding, and scaled our business faster than expected.",
+    image: "/assets/images/founders/AlexTurner.svg",
+    title: "catalog"
+  },
+  
+]
+
+//created by Omodara Ayodele
+//github: OmodaraAyo
+
+
+{/**repairs and installation services */}
+
+export const rPAIServicesData = {
+  title: "INDUSTRIES WE SERVE",
+  subTitle: "Repairs, Maintenance & Installation Services",
+  description: "Reach more customers and grow your service bookings with digital strategies tailored for repair, maintenance, and installation businesses."
+}
+
+//created by Omodara Ayodele
+//github: OmodaraAyo
+
+export const handyManServicesData = {
+  id: 1,
+  bgPrimaryColor: "#EEF2FF",
+  bgSecondaryColor: "#EEF2FF",
+  componentTitle: "Handyman Services",
+  description1:
+    "As a handyman, you're a go-to fixer — but in a competitive world, being found, trusted, and booked quickly is what separates thriving pros from the rest. MyHomeSolution positions your business for growth with digital tools built to generate leads, automate client interactions, and turn your online presence into a job-booking machine.",
+  description2:
+    "We don't just build websites — we create powerful online hubs that convert visitors into loyal customers. Whether you're tackling small repairs or full home projects, our system helps you scale with ease.",
+  testimonial:
+    "Before MyHomeSolution, I was invisible online. Now, I get consistent quote requests daily — my schedule is full and I've hired two more hands to keep up with demand.",
+  authorName: "Daniel O., ",
+  authorPosition: "HandyOne Services",
+  gridImgBgPrimarycolor: "#FFF8E5",
+  gridImgBgSecondarycolor: "#FFF8E5",
+  gridData: [
+    {
+      title: "Smart Booking Systems",
+      description:
+        "Let your website work for you — integrated booking, quote forms, and follow-ups that fill your calendar while you're on the job.",
+      image: "/assets/images/industries/HerosectionFrame1.svg",
+    },
+    {
+      title: "Top-Ranked Local Search Presence",
+      description:
+        "Dominate search results in your area with hyperlocal SEO, optimized Google Business Profiles, and trust-boosting content.",
+      image: "/assets/images/industries/HerosectionFrame1.svg",
+    },
+    {
+      title: "Trust-Building Brand Assets",
+      description:
+        "High-converting landing pages, review embeds, project galleries, and testimonials that close jobs before the first call.",
+      image: "/assets/images/industries/HerosectionFrame1.svg",
+    },
+  ],
+  approachComponentData: [
+    {
+      id: 1,
+      title: "Conversion-First Website Design",
+      description:
+        "Every touchpoint is optimized — from mobile layout to call-to-actions — guiding visitors to book, fast.",
+    },
+    {
+      id: 2,
+      title: "Localized Lead Generation",
+      description:
+        "Geo-targeted content and ads designed to reach real customers searching for your exact services, right in your service areas.",
+    },
+    {
+      id: 3,
+      title: "Reputation & Reviews Engine",
+      description:
+        "Automated systems that collect, promote, and showcase 5-star reviews to earn trust on autopilot.",
+    },
+  ],
+};
+
+//created by Omodara Ayodele
+//github: OmodaraAyo
+
+
+export const plubmingServicesData = {
+  id: 2,
+  bgPrimaryColor: "#EEF2FF",
+  bgSecondaryColor: "#FFF8E5",
+  componentTitle: "Plumbing Services",
+  description1:
+    "Plumbers keep things flowing behind the scenes, but when customers need help, they search online. If your digital presence isn't optimized, you're leaving jobs (and revenue) on the table. At MyHomeSolution, we help plumbers dominate local search, build credibility fast, and automate the booking process — so you’re never missing out on urgent calls or big-ticket projects.",
+  description2:
+    "Whether you specialize in residential, commercial, or emergency plumbing, we tailor every digital touchpoint to make your brand trusted, visible, and easy to book.",
+  testimonial:
+    "We went from a basic site and zero leads to showing up #1 in our area and getting daily service calls. MyHomeSolution turned our phones into nonstop business lines.",
+  authorName: "Chinedu A., ",
+  authorPosition: "AquaSwift Plumbing",
+  gridImgBgPrimarycolor: "#FFF8E5",
+  gridImgBgSecondarycolor: "#E3EAFF",
+  gridData: [
+    {
+      title: "Emergency-Ready Booking & Response Tools",
+      description:
+        "Speed matters. We integrate fast-acting booking systems and smart chat that help you secure the job on the first click.",
+      image: "/assets/images/industries/HerosectionFrame1.svg",
+    },
+    {
+      title: "Local SEO That Gets You Found First",
+      description:
+        "When someone searches “plumber near me,” you'll be right at the top — thanks to powerful SEO, map optimization, and review automation.",
+      image: "/assets/images/industries/HerosectionFrame1.svg",
+    },
+    {
+      title: "Professional Branding That Builds Trust",
+      description:
+        "No more DIY look — we give you a sharp, modern identity that makes customers feel confident calling you",
+      image: "/assets/images/industries/HerosectionFrame1.svg",
+    },
+  ],
+  approachComponentData: [
+    {
+      id: 1,
+      title: "Fast-Track Lead Funnels",
+      description:
+        "We design funnels that guide high-intent users to booking pages, call buttons, or quote requests in seconds.",
+    },
+    {
+      id: 2,
+      title: "Smart Automation for Quotes & Follow-Ups",
+      description:
+        "Automate your quote replies, appointment confirmations, and post-job review requests to win more and do less.",
+    },
+    {
+      id: 3,
+      title: "Brand Power That Converts",
+      description:
+        "From logo to landing page, we craft assets that speak trust, professionalism, and reliability — the plumber everyone recommends.",
+    },
+  ],
+};
+
+//created by Omodara Ayodele
+//github: OmodaraAyo
+
+
+export const electricalServicesData = {
+  id: 3,
+  bgPrimaryColor: "#EEF2FF",
+  bgSecondaryColor: "#E9F9F1",
+  componentTitle: "Electrical Services",
+  description1:
+    "When it comes to electrical services, trust and precision are everything. At MyHomeSolution, we help electricians build that trust online — with professional branding, lightning-fast websites, and smart marketing strategies that keep your calendar fully booked. Whether you're wiring new builds, offering emergency repairs, or specializing in smart home installations, we make sure your business becomes the go-to spark in your area.",
+  description2:
+    "From Google Maps dominance to glowing online reviews and automated quotes, we engineer your success — so all you have to do is deliver your best work.",
+  testimonial:
+    "We doubled our calls within three months. Our site finally shows off what we do, and MyHomeSolution's SEO magic made us a top local choice",
+  authorName: "Bola E., ",
+  authorPosition: "VoltWorx Solutions",
+  gridImgBgPrimarycolor: "#FFF8E5",
+  gridImgBgSecondarycolor: "#FFF8E5",
+  gridData: [
+    {
+      title: "Shock-Proof Local Marketing That Converts",
+      description:
+        "Dominate your service area with targeted SEO, Google Business optimization, and strategic content that drives trust.",
+      image: "/assets/images/industries/HerosectionFrame1.svg",
+    },
+    {
+      title: "Streamlined Scheduling & Quote Requests",
+      description:
+        "Make it easy for potential clients to book you — instantly. Our tools help convert visits into scheduled jobs effortlessly.",
+      image: "/assets/images/industries/HerosectionFrame1.svg",
+    },
+    {
+      title: "Professional Website That Sparks Confidence",
+      description:
+        "We craft a high-performance site that reflects your expertise and earns customer trust before they even call.",
+      image: "/assets/images/industries/HerosectionFrame1.svg",
+    },
+  ],
+  approachComponentData: [
+    {
+      id: 1,
+      title: "Precision-Tuned Conversion Funnels",
+      description:
+        "Your site isn't just pretty — it's a lead magnet. Every section is designed to guide users into action fast.",
+    },
+    {
+      id: 2,
+      title: "Smart Automation & CRM Integration",
+      description:
+        "We install automations for estimates, reminders, and follow-ups — so you're free to focus on the job, not the inbox.",
+    },
+    {
+      id: 3,
+      title: "Brand Identity that Electrifies Trust",
+      description:
+        "From logo to tone of voice, we give your brand a sharp, confident presence that positions you as the professional choice.",
+    },
+  ],
+};
+
+//created by Omodara Ayodele
+//github: OmodaraAyo
+
+export const hvacMaintenanceData = {
+  id: 4,
+  bgPrimaryColor: "#EEF2FF",
+  bgSecondaryColor: "#FFEEFD",
+  componentTitle: "HVAC Installation & Maintenance",
+  description1:
+    "In a climate where comfort is everything, your HVAC business deserves marketing that never goes cold. At MyHomeSolution, we specialize in heating up your leads and cooling down your workload with automation, precision targeting, and a strong online presence. From seasonal campaigns to service contracts, we help HVAC pros like you stay top of mind and fully booked — all year round.",
+  description2:
+    "Whether you handle residential installs or commercial maintenance, we position you as the local expert with a site and strategy built for trust, speed, and conversions.",
+  testimonial:
+    "MyHomeSolution didn't just build a great site — they helped us grow from word-of-mouth referrals to dominating Google in our city. We're booked out weeks ahead!",
+  authorName: "James K., ",
+  authorPosition: "ArcticFlow Services",
+  gridImgBgPrimarycolor: "#FFF8E5",
+  gridImgBgSecondarycolor: "#FFF8E5",
+  gridData: [
+    {
+      title: "Local SEO That Keeps You on the Map",
+      description:
+        "We optimize your Google profile, service pages, and blog content to make you the #1 choice in your area.",
+      image: "/assets/images/industries/HerosectionFrame1.svg",
+    },
+    {
+      title: "Smart Scheduling & Service Reminders",
+      description:
+        "Integrated booking systems and automations keep your maintenance clients loyal and new customers flowing.",
+      image: "/assets/images/industries/HerosectionFrame1.svg",
+    },
+    {
+      title: "Branded Presence That Builds Trust",
+      description:
+        "Your digital presence will reflect your reliability and professionalism — essential for big-ticket HVAC decisions.",
+      image: "/assets/images/industries/HerosectionFrame1.svg",
+    },
+  ],
+  approachComponentData: [
+    {
+      id: 1,
+      title: "Performance-Driven Website Design",
+      description:
+        "Your site is fast, mobile-ready, and strategically designed to convert homeowners and facility managers into clients.",
+    },
+    {
+      id: 2,
+      title: "Automated Lead Nurturing & CRM Integration",
+      description:
+        "From quote requests to post-install follow-ups, our systems make sure no opportunity slips through the cracks.",
+    },
+    {
+      id: 3,
+      title: "Premium Branding & Video Testimonials",
+      description:
+        "Build trust with a polished visual identity and customer testimonials that prove you're the right choice, every time.",
+    },
+  ],
+};
+
+//created by Omodara Ayodele
+//github: OmodaraAyo
+
+export const appliancesInstallationData = {
+  id: 5,
+  bgPrimaryColor: "#EEF2FF",
+  bgSecondaryColor: "#EEF2FF",
+  componentTitle: "Appliances Repair & Installation",
+  description1:
+    "In today's convenience-driven world, broken appliances mean stressed customers — and fast decisions. MyHomeSolution helps appliance repair and installation businesses stand out where it matters most: local search, social media, and online reviews. Our data-backed strategies help you show up when customers need you the most — and make them feel confident choosing your service.",
+  description2:
+    "Whether you specialize in kitchen installs, washer/dryer repair, or smart home tech setups, we'll craft a digital presence that screams reliability, speed, and top-tier professionalism.",
+  testimonial:
+    "We've doubled our service calls since working with MyHomeSolution. Their strategies brought us straight to the first page on Google — and the phone hasn't stopped ringing.",
+  authorName: "Chuka A., ",
+  authorPosition: "FixFast Appliances NG",
+  gridImgBgPrimarycolor: "#FFF8E5",
+  gridImgBgSecondarycolor: "#FFF8E5",
+  gridData: [
+    {
+      title: "Hyper-Local Visibility on Google & Maps",
+      description:
+        "We help you dominate local search rankings, voice search, and map listings so customers can find you when urgency strikes.",
+      image: "/assets/images/industries/HerosectionFrame1.svg",
+    },
+    {
+      title: "Booking System That Reduces Missed Appointments",
+      description:
+        "Say goodbye to back-and-forths. We integrate intuitive booking and service reminders that save time and boost client satisfaction.",
+      image: "/assets/images/industries/HerosectionFrame1.svg",
+    },
+    {
+      title: `Branding That Screams "Reliable & Certified"`,
+      description:
+        "Showcase your skills with a polished brand identity, trust badges, and testimonial-driven credibility.",
+      image: "/assets/images/industries/HerosectionFrame1.svg",
+    },
+  ],
+  approachComponentData: [
+    {
+      id: 1,
+      title: "Conversion-Focused Website + Booking Flow",
+      description:
+        "We design websites that convert visits into bookings, with mobile-optimized forms and easy navigation built for service industries.",
+    },
+    {
+      id: 2,
+      title: "Automated CRM & Follow-Up Workflows",
+      description:
+        "We'll connect your systems to follow up with leads, send quotes, and confirm appointments automatically — reducing your admin load.",
+    },
+    {
+      id: 3,
+      title: "Reputation Management with Real Client Stories",
+      description:
+        "From email review campaigns to video testimonials, we build digital proof that your appliance service is second to none.",
+    },
+  ],
+};
+
+//created by Omodara Ayodele
+//github: OmodaraAyo
 

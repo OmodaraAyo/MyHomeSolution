@@ -56,14 +56,11 @@ export default function FoundersTestimonialSection() {
           </div>
         </motion.div>
 
-        <div
-          className="md:flex gap-6 min-w-[280px] marker:container mx-auto overflow-x-auto snap-x scrollbar-hide"
-          ref={scrollElement}
-        >
+        <div className="flex gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-hide scroll-smooth" ref={scrollElement} style={{ willChange: 'transform' }}>
           {foundersTestimonialData.map((data, index) => (
             <motion.div
               key={index}
-              className="rounded-xl text-start px-2 md:flex md:gap-6 snap-start w-full"
+              className="rounded-xl text-start md:flex md:gap-6 snap-start w-full shrink-0 sm:w-full md:w-[80%] lg:w-[100%] lg:px-2"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
@@ -79,11 +76,10 @@ export default function FoundersTestimonialSection() {
                 />
               </div>
 
-              <div>
-                <h3 className="text-xl sm:text-2xl text-[#4A4A4A] min-w-full font-semibold max-w-[690] mb-5">
-                  {data.description}
-                </h3>
-                <div className="flex items-center gap-3">
+              <div className="flex flex-col h-full">
+                <h3 className="text-xl sm:text-2xl text-[#4A4A4A] min-w-full font-semibold max-w-[690] mb-5">{data.description}</h3>
+                {/**profile details */}
+                <div className="flex items-center gap-3 mt-auto">
                   <Image
                     src={data.image}
                     alt={data.title}
@@ -92,12 +88,8 @@ export default function FoundersTestimonialSection() {
                     className="rounded-lg md:hidden"
                   />
                   <div>
-                    <p className="text-md font-bold md:mt-2 text-gray-600 text-black">
-                      {data.founder}
-                    </p>
-                    <p className="text-sm md:mt-1 text-gray-600">
-                      {data.company}
-                    </p>
+                    <p className="text-md font-bold md:mt-2 text-gray-600">{data.founder}</p>
+                    <p className="text-sm md:mt-1 text-gray-600">{data.company}</p>
                   </div>
                 </div>
               </div>

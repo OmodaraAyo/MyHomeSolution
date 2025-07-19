@@ -1,26 +1,29 @@
 import { motion } from "framer-motion";
-import { foundersTestimonialData } from "@/data/home";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 import { useRef } from "react";
 import sora from "@/public/assets/fonts/Sora";
+import { businessOwnerTestimonialsData } from "@/data/industries";
+import GridOne from "./Testimonialgrid/grid-one";
+import GridTwo from "./Testimonialgrid/grid-two";
+import GridThree from "./Testimonialgrid/grid-three";
 export default function BusinessOwnerTestimonials() {
   const scrollElement = useRef<HTMLDivElement>(null);
 
   const handleScrollLeft = () => {
     if (scrollElement.current) {
-      scrollElement.current.scrollBy({ left: -300, behavior: "smooth" });
+      scrollElement.current.scrollBy({ left: -window.innerWidth, behavior: "smooth" });
     }
   };
 
   const handleScrollRight = () => {
     if (scrollElement.current) {
-      scrollElement.current.scrollBy({ left: 300, behavior: "smooth" });
+      scrollElement.current.scrollBy({ left: window.innerWidth, behavior: "smooth" });
     }
   };
   return (
     <section>
-      <div className="container mx-auto py-12 px-3 items-center">
+      <div className="container mx-auto py-12 px-3 items-center overflow-hidden">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -28,14 +31,12 @@ export default function BusinessOwnerTestimonials() {
           viewport={{ once: true }}
           className="flex items-center justify-center mb-9 px-2 md:px-0"
         >
-          <p
-            className={`text-[24px] sm:text-3xl font-[600] text-[#333333] mt-2 ${sora.className}`}
-          >
-            What Founders Say
+          <p className={`text-[24px] sm:text-3xl font-[600] text-[#333333] mt-2 w-full px-1 ${sora.className}`}>
+            What Business Owners Say
           </p>
 
           {/* Navigation Buttons */}
-          <div className="flex w-fit ml-auto items-center justify-center gap-2 px-2">
+          <div className="flex w-fit ml-auto items-center justify-center gap-2 px-2 lg:hidden">
             <motion.button
               whileTap={{ scale: 0.9 }}
               whileHover={{ scale: 1.1 }}
@@ -56,18 +57,19 @@ export default function BusinessOwnerTestimonials() {
           </div>
         </motion.div>
 
-        <div
-          className="flex overflow-hidden gap-6 min-w-[280px] marker:container mx-auto overflow-x-auto snap-x scrollbar-hide"
-          ref={scrollElement}
-        >
-          {foundersTestimonialData.map((data, index) => (
-            <motion.div
+        {/**destop layout */}
+        <div className="overflow-hidden snap-x snap-mandatory scrollbar-hide scroll-smooth hidden lg:flex h-screen gap-3" ref={scrollElement}>
+          <GridOne />
+          <GridTwo />
+          <GridThree />
+        </div>
+
+        {/**mobile layout */}
+        <div className="flex gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-hide scroll-smooth lg:hidden" ref={scrollElement} style={{ willChange: 'transform' }}>
+          {businessOwnerTestimonialsData.map((data, index) => (
+            <div
               key={index}
-              className="rounded-xl text-start px-2 md:flex md:gap-6 snap-start w-full"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.2 }}
-              viewport={{ once: true }}
+              className="rounded-xl text-start md:flex md:gap-6 snap-start w-full shrink-0 sm:w-full md:w-[80%] lg:w-[25rem] px-2"
             >
               <div>
                 <Image
@@ -79,11 +81,12 @@ export default function BusinessOwnerTestimonials() {
                 />
               </div>
 
-              <div>
-                <h3 className="text-xl sm:text-2xl text-[#4A4A4A] min-w-full font-semibold max-w-[690] mb-5">
+              <div className="flex flex-col h-full">
+                <p className="text-xl sm:text-2xl opacity-70 w-full font-semibold mb-5 ">
                   {data.description}
-                </h3>
-                <div className="flex items-center gap-3">
+                </p>
+                {/**profile details */}
+                <div className="flex items-center gap-3 mt-auto">
                   <Image
                     src={data.image}
                     alt={data.title}
@@ -92,16 +95,16 @@ export default function BusinessOwnerTestimonials() {
                     className="rounded-lg md:hidden"
                   />
                   <div>
-                    <p className="text-md font-bold md:mt-2 text-gray-600">
+                    <p className="text-md font-semibold md:mt-2 text-gray-600">
                       {data.founder}
                     </p>
-                    <p className="text-sm md:mt-1 text-gray-600">
+                    <p className="text-sm md:mt-1 opacity-70 tracking-wide">
                       {data.company}
                     </p>
                   </div>
                 </div>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>
