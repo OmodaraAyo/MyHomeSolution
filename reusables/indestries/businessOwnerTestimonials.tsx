@@ -26,7 +26,7 @@ export default function BusinessOwnerTestimonials() {
       <div className="container mx-auto py-12 px-3 items-center overflow-hidden">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
           className="flex items-center justify-center mb-9 px-2 md:px-0"
@@ -65,11 +65,15 @@ export default function BusinessOwnerTestimonials() {
         </div>
 
         {/**mobile layout */}
-        <div className="flex gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-hide scroll-smooth lg:hidden" ref={scrollElement} style={{ willChange: 'transform' }}>
+        <div className="flex gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-hide scroll-smooth lg:hidden" ref={scrollElement} style={{ willChange: 'transform', overflowY: 'hidden' }}>
           {businessOwnerTestimonialsData.map((data, index) => (
-            <div
+            <motion.div
               key={index}
-              className="rounded-xl text-start md:flex md:gap-6 snap-start w-full shrink-0 sm:w-full md:w-[80%] lg:w-[25rem] px-2"
+              className="rounded-xl text-start md:flex md:gap-6 snap-start w-full shrink-0 sm:w-full lg:w-[25rem] px-2 overflow-hidden"
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.2 }}
+              viewport={{ once: true }}
             >
               <div>
                 <Image
@@ -77,7 +81,8 @@ export default function BusinessOwnerTestimonials() {
                   alt={data.title}
                   width={312}
                   height={312}
-                  className="hidden md:block"
+                  className="hidden md:block rounded-full"
+                  loading="lazy"
                 />
               </div>
 
@@ -93,6 +98,7 @@ export default function BusinessOwnerTestimonials() {
                     width={40}
                     height={40}
                     className="rounded-lg md:hidden"
+                    loading="lazy"
                   />
                   <div>
                     <p className="text-md font-semibold md:mt-2 text-gray-600">
@@ -104,7 +110,7 @@ export default function BusinessOwnerTestimonials() {
                   </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

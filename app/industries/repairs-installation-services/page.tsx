@@ -19,12 +19,12 @@ export default function RepairServices() {
         description={rPAIServicesData.description}
       />
       <HandyManServices />
-      <PlubmingServices/>
-      <ElectricalServices/>
-      <HvacMaintenance/>
-      <AppliancesInstallation/>
-      <BusinessOwnerTestimonials/>
-            <SuccessStorySection link={"/schedule-consultation"}/>
+      <PlubmingServices />
+      <ElectricalServices />
+      <HvacMaintenance />
+      <AppliancesInstallation />
+      <BusinessOwnerTestimonials />
+      <SuccessStorySection link={"/schedule-consultation"} />
     </>
   );
 }

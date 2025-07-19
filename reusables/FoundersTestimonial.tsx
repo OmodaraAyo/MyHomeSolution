@@ -56,12 +56,12 @@ export default function FoundersTestimonialSection() {
           </div>
         </motion.div>
 
-        <div className="flex gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-hide scroll-smooth" ref={scrollElement} style={{ willChange: 'transform' }}>
+        <div className="flex gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-hide scroll-smooth" ref={scrollElement} style={{ willChange: 'transform', overflowY: 'hidden' }}>
           {foundersTestimonialData.map((data, index) => (
             <motion.div
               key={index}
-              className="rounded-xl text-start md:flex md:gap-6 snap-start w-full shrink-0 sm:w-full md:w-[80%] lg:w-[100%] lg:px-2"
-              initial={{ opacity: 0, y: 20 }}
+              className="rounded-xl text-start md:flex md:gap-6 snap-start w-full shrink-0 sm:w-full lg:w-[100%] lg:px-2 overflow-hidden"
+              initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
               viewport={{ once: true }}
