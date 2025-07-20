@@ -22,7 +22,9 @@ export default function GridThree() {
                 alt={data.title}
                 width={120}
                 height={120}
-                className="object-scale-down mb-5"
+                className="mb-5"
+                priority
+                quality={85}
               />
             )}
             <p className="w-full mb-5">{data.description}</p>

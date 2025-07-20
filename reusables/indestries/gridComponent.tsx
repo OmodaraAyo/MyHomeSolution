@@ -15,7 +15,7 @@ const GridComponent = memo(function GridComponent(props: GridComponentProps) {
         >
           <div className="flex flex-col items-center">
             <div 
-            className="w-12 h-12 bg-[] mb-4 rounded-full flex items-center justify-center"
+            className="w-12 h-12 mb-4 rounded-full flex items-center justify-center"
             style={{backgroundColor: isMobile?  imgBgSecondaryColor : imgBgPrimaryColor}}
             >
               <Image

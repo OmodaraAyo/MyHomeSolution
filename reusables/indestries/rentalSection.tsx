@@ -110,9 +110,8 @@ useEffect(() => {
               alt={industryHeroSectionImages[0].title}
               width={610}
               height={516}
-              className="w-full h-auto object-contain"
-              loading="lazy"
-              priority={false}
+              className="w-full h-auto object-cover"
+              priority
               quality={85}
             />
           </div>

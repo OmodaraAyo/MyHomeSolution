@@ -36,7 +36,7 @@ export default function BusinessOwnerTestimonials() {
           </p>
 
           {/* Navigation Buttons */}
-          <div className="flex w-fit ml-auto items-center justify-center gap-2 px-2 lg:hidden">
+          <div className="flex w-fit ml-auto items-center justify-center gap-2 px-2 xl:hidden">
             <motion.button
               whileTap={{ scale: 0.9 }}
               whileHover={{ scale: 1.1 }}
@@ -58,18 +58,18 @@ export default function BusinessOwnerTestimonials() {
         </motion.div>
 
         {/**destop layout */}
-        <div className="overflow-hidden snap-x snap-mandatory scrollbar-hide scroll-smooth hidden lg:flex h-screen gap-3" ref={scrollElement}>
+        <div className="overflow-hidden snap-x snap-mandatory scrollbar-hide scroll-smooth hidden xl:flex h-[48rem] gap-3" ref={scrollElement}>
           <GridOne />
           <GridTwo />
           <GridThree />
         </div>
 
         {/**mobile layout */}
-        <div className="flex gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-hide scroll-smooth lg:hidden" ref={scrollElement} style={{ willChange: 'transform', overflowY: 'hidden' }}>
+        <div className="flex gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-hide scroll-smooth xl:hidden" ref={scrollElement} style={{ willChange: 'transform', overflowY: 'hidden' }}>
           {businessOwnerTestimonialsData.map((data, index) => (
             <motion.div
               key={index}
-              className="rounded-xl text-start md:flex md:gap-6 snap-start w-full shrink-0 sm:w-full lg:w-[25rem] px-2 overflow-hidden"
+              className="rounded-xl text-start md:flex md:gap-6 snap-start w-full shrink-0 sm:w-full xl:w-[25rem] px-2 overflow-hidden"
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.2 }}

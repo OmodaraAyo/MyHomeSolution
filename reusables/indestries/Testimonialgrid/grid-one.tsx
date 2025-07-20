@@ -22,7 +22,9 @@ export default function GridOne() {
                 alt={data.title}
                 width={110}
                 height={110}
-                className="object-scale-down mix-blend mb-2"
+                className="mix-blend mb-2"
+                priority
+                quality={85}
               />
             )}
             <p className="text-black w-full mb-5">{data.description}</p>
