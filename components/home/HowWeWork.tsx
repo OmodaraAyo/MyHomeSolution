@@ -22,7 +22,8 @@ export default function HowWeWorkSection() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
-        className={`text-2xl sm:text-3xl font-semibold text-[#333333] mb-17 text-center flex flex-col items-center gap-5 ${sora.className}`}
+        className={`text-2xl sm:text-3xl font-semibold text-[#333333] mb-17 text-center flex flex-col items-center gap-5`}
+        style={{ fontFamily: "Sora, system-ui, sans-serif" }}
       >
         <p>How We Work</p>
       </motion.h2>

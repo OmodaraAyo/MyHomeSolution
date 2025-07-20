@@ -27,7 +27,8 @@ export default function PricingPlanSection() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
-        className={`mb-16 mx-auto max-w-2xl ${sora.className}`}
+        className={`mb-16 mx-auto max-w-2xl`}
+        style={{ fontFamily: "Sora, system-ui, sans-serif" }}
       >
         <p className="text-lg font-[400] text-[#777777]">Our Pricing Plans</p>
         <p className="text-2xl lg:text-3xl font-[600] text-[#333333] mt-2">
@@ -66,7 +67,7 @@ export default function PricingPlanSection() {
               }}
             >
               <div>
-                <h1 className={`text-2xl font-semibold mb-1 ${sora.className}`}>
+                <h1 className={`text-2xl font-semibold mb-1`} style={{ fontFamily: "Sora, system-ui, sans-serif" }}>
                   {data.plan}
                 </h1>
                 <p className="text-sm">{data.planDescription}</p>
@@ -75,7 +76,7 @@ export default function PricingPlanSection() {
               <div>
                 {data.price ? (
                   <div className="flex items-end">
-                    <h1 className={`font-bold text-4xl ${sora.className}`}>
+                    <h1 className={`font-bold text-4xl`} style={{ fontFamily: "Sora, system-ui, sans-serif" }}>
                       {DisplayUSDCurrency(parseFloat(data.price))}
                     </h1>
                     <p className="font-medium text-lg tracking-wide">
@@ -111,7 +112,8 @@ export default function PricingPlanSection() {
 
       <div className="flex flex-col lg:flex-row items-center justify-center gap-2.5 lg:gap-7 mt-15">
         <p
-          className={`font-medium text-sm lg:text-2xl text-[#4A4A4A] ${sora.className}`}
+          className={`font-medium text-sm lg:text-2xl text-[#4A4A4A]`}
+          style={{ fontFamily: "Sora, system-ui, sans-serif" }}
         >
           Explore more options?
         </p>

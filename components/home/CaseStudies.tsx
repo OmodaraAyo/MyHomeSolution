@@ -41,10 +41,10 @@ export default function CaseStudiesSection() {
         viewport={{ once: true }}
         className="relative z-30 container mx-auto px-5 md:px-12 lg:px-48"
       >
-        <div className={`text-center mb-16 ${sora.className}`}>
+        <div className={`text-center mb-16`} style={{ fontFamily: "Sora, system-ui, sans-serif" }}>
           <p className="text-lg font-[400] text-white">Case Studies</p>
           <p className="text-[29px] font-[600] mt-2 max-w-xl mx-auto text-white">
-            We Don’t Just Build Brands, We Drive Real Results
+            We Don&apos;t Just Build Brands, We Drive Real Results
           </p>
           <p className="text-sm font-light text-[#E8E8E8] max-w-2xl mx-auto mt-4">
             At MyHomeSolution, we help home service businesses go from invisible
@@ -81,7 +81,7 @@ export default function CaseStudiesSection() {
                 </h1>
 
                 <div>
-                  <h1 className={`font-bold text-3xl ${sora.className}`}>
+                  <h1 className={`font-bold text-3xl`} style={{ fontFamily: "Sora, system-ui, sans-serif" }}>
                     {
                       data.plan === "Interior Design" ? `${data.percentage}` : `${data.percentage}%` 
                     }

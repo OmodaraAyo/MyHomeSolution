@@ -23,7 +23,8 @@ export default function BuildLegacy() {
             className="p-6 flex-shrink-0 flex flex-col items-center gap-2 cursor-auto"
           >
             <h1
-              className={`text-2xl lg:text-3xl max-w-[580] font-semibold text-ellipsis line-clamp-2 ${sora.className}`}
+              className={`text-2xl lg:text-3xl max-w-[580] font-semibold text-ellipsis line-clamp-2`}
+              style={{ fontFamily: "Sora, system-ui, sans-serif" }}
             >
               {data.title}
             </h1>

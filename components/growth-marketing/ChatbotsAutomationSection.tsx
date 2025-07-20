@@ -19,7 +19,8 @@ export default function ChatbotsAutomationSection() {
           className="w-full max-w-2xl text-left flex flex-col gap-3 sm:gap-5 lg:gap-5"
         >
           <p
-            className={`text-lg sm:text-3xl font-semibold text-[#333333] ${sora.className}`}
+            className={`text-lg sm:text-3xl font-semibold text-[#333333]`}
+            style={{ fontFamily: "Sora, system-ui, sans-serif" }}
           >
             AI & Chatbots Automation
           </p>

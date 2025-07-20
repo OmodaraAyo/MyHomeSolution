@@ -28,7 +28,7 @@ export default function MeetTheTeamSection() {
         className="container mx-auto"
       >
         <div className={`mb-4 `}>
-          <h2 className={`text-xl lg:text-3xl font-bold text-[#333333] ${sora.className}`}>
+          <h2 className={`text-xl lg:text-3xl font-bold text-[#333333]`} style={{ fontFamily: "Sora, system-ui, sans-serif" }}>
             Meet the Team
           </h2>
           <p className=" text-sm lg:text-md text-[#8E8E8E] mt-3">

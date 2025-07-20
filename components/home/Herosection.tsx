@@ -53,7 +53,8 @@ export default function HeroSection() {
       >
         <div className={`relative z-10 flex flex-col items-center justify-center gap-6`}>
           <h1
-            className={`text-4xl md:text-6xl font-bold mb-6 leading-20 ${sora.className}`}
+            className={`text-4xl md:text-6xl font-bold mb-6 leading-20`}
+            style={{ fontFamily: "Sora, system-ui, sans-serif" }}
           >
             We Help Local Home Service Brands Go 10X Bigger
           </h1>

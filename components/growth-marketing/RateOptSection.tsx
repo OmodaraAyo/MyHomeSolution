@@ -19,14 +19,15 @@ export default function RateOptSection() {
           className="w-full max-w-2xl text-left flex flex-col gap-3 sm:gap-5 lg:gap-5"
         >
           <p
-            className={`text-lg sm:text-3xl font-semibold text-[#333333] ${sora.className}`}
+            className={`text-lg sm:text-3xl font-semibold text-[#333333]`}
+            style={{ fontFamily: "Sora, system-ui, sans-serif" }}
           >
             Conversion Rate Optimization (CRO)
           </p>
 
           <div className="text-xs sm:text-base text-[#444] space-y-4 lg:max-w-xl leading-[1.07rem] sm:leading-7">
             <p>
-             We don’t just send traffic—we make sure your site turns visitors into paying customers. Our CRO team runs A/B tests, heatmaps, and user flow audits to optimize every touchpoint.
+             We don&apos;t just send traffic—we make sure your site turns visitors into paying customers. Our CRO team runs A/B tests, heatmaps, and user flow audits to optimize every touchpoint.
             </p>
             <p>
               Small tweaks equals big wins. Watch your bookings rise without spending more on ads.

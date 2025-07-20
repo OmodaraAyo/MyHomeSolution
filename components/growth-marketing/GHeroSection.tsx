@@ -58,11 +58,12 @@ export default function GHeroSection() {
         className="container mx-auto px-8 py-4 text-left relative z-20"
       >
         <div className="flex flex-col items-start gap-1 w-full">
-          <h1 className={`text-lg font-semibold leading-tight text-[#606060] ${sora.className}`}>
+          <h1 className={`text-lg font-semibold leading-tight text-[#606060]`} style={{ fontFamily: "Sora, system-ui, sans-serif" }}>
             GROWTH MARKETING
           </h1>
           <p
-            className={`text-[1.6rem] md:text-5xl font-bold leading-11 md:leading-20 w-full md:max-w-2xl ${sora.className}`}
+            className={`text-[1.6rem] md:text-5xl font-bold leading-11 md:leading-20 w-full md:max-w-2xl`}
+            style={{ fontFamily: "Sora, system-ui, sans-serif" }}
           >
             Smarter Systems. Scalable Growth. Measurable Results.
           </p>

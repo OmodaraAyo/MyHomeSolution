@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import sora from "@/public/assets/fonts/Sora";
 import { packagesData } from "@/data/pricing";
 import { DisplayUSDCurrency } from "@/helpers/displayCurrency";
 
@@ -17,7 +16,8 @@ export default function AdditionalPackagesSection() {
         className="mb-15 mx-auto max-w-[40rem]"
       >
         <p
-          className={`text-2xl sm:text-3xl font-[600] text-[#333333] mt-2 ${sora.className}`}
+          className={`text-2xl sm:text-3xl font-[600] text-[#333333] mt-2`}
+          style={{ fontFamily: "Sora, system-ui, sans-serif" }}
         >
           Additional Packages
         </p>

@@ -19,14 +19,15 @@ export default function PremiumAnalyticsSection() {
           className="w-full max-w-2xl text-left flex flex-col gap-3 sm:gap-5 lg:gap-5"
         >
           <p
-            className={`text-lg sm:text-3xl font-semibold text-[#333333] ${sora.className}`}
+            className={`text-lg sm:text-3xl font-semibold text-[#333333]`}
+            style={{ fontFamily: "Sora, system-ui, sans-serif" }}
           >
            Premium Data Analytics & Reporting
           </p>
 
           <div className="text-xs sm:text-base text-[#444] space-y-4 lg:max-w-xl leading-[1.07rem] sm:leading-7">
             <p>
-             Real-time dashboards. Clear insights. We deliver reports that actually make sense and show where every dollar goes—and what’s working best.
+             Real-time dashboards. Clear insights. We deliver reports that actually make sense and show where every dollar goes—and what&apos;s working best.
             </p>
             <p>
               Make confident growth decisions, backed by data, not guesswork.

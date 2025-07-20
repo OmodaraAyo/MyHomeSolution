@@ -59,12 +59,14 @@ export default function DHeroSection() {
       >
         <div className="flex flex-col items-start gap-1 w-full">
           <h1
-            className={`text-lg font-semibold leading-tight text-[#606060] ${sora.className}`}
+            className={`text-lg font-semibold leading-tight text-[#606060]`}
+            style={{ fontFamily: "Sora, system-ui, sans-serif" }}
           >
             DIGITAL MARKETING
           </h1>
           <p
-            className={`text-[1.6rem] md:text-5xl font-bold leading-11 md:leading-20 w-full md:max-w-4xl ${sora.className}`}
+            className={`text-[1.6rem] md:text-5xl font-bold leading-11 md:leading-20 w-full md:max-w-4xl`}
+            style={{ fontFamily: "Sora, system-ui, sans-serif" }}
           >
             Fuel Visibility.
             <br />

@@ -58,14 +58,14 @@ export default function BHeroSection() {
         className="container mx-auto px-8 py-4 text-left relative z-20"
       >
         <div className="flex flex-col items-start gap-1 w-full">
-          <h1 className={`text-lg font-semibold leading-tight text-[#606060] ${sora.className}`}>
+          <h1 className={`text-lg font-semibold leading-tight text-[#606060]`} style={{ fontFamily: "Sora, system-ui, sans-serif" }}>
             BRAND SCALING
           </h1>
-          <p className={`text-[1.6rem] md:text-5xl font-bold leading-11 md:leading-20 w-full md:max-w-2xl ${sora.className}`}>
+          <p className={`text-[1.6rem] md:text-5xl font-bold leading-11 md:leading-20 w-full md:max-w-2xl`} style={{ fontFamily: "Sora, system-ui, sans-serif" }}>
             Build a Brand That Looks Good and Grows Fast
           </p>
           <p className="max-w-[42.2rem] text-[#606060]">
-            Your brand is more than a logo — it’s the experience, trust, and presence you create. We craft cohesive brand systems that connect and convert.
+            Your brand is more than a logo — it&apos;s the experience, trust, and presence you create. We craft cohesive brand systems that connect and convert.
           </p>
 
           <Link

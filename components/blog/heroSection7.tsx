@@ -58,16 +58,16 @@ export default function HeroSection7() {
         className="container mx-auto px-8 py-4 text-left relative z-20"
       >
         <div className="flex flex-col items-start md:p-13 gap-1 w-full">
-          <h1 className={`text-lg font-semibold leading-tight text-[#606060] ${sora.className}`}>
+          <h1 className={`text-lg font-semibold leading-tight text-[#606060]`} style={{ fontFamily: "Sora, system-ui, sans-serif" }}>
             GROWTH MARKETING
           </h1>
-          <p className={`text-[1.6rem] md:text-5xl font-bold leading-11 md:leading-20 w-full md:max-w-[43rem] ${sora.className}`}>
-            Why Your SEO Isn’t Working — and How to Fix It
+          <p className={`text-[1.6rem] md:text-5xl font-bold leading-11 md:leading-20 w-full md:max-w-[43rem]`} style={{ fontFamily: "Sora, system-ui, sans-serif" }}>
+            Why Your SEO Isn&apos;t Working — and How to Fix It
           </p>
 
           <div className="max-w-[66rem] text-[#606060] space-y-3">
-            <p className={`text-sm lg:text-[1.7rem] font-semibold leading-tight text-black`}>You’ve invested in SEO, but the results are… underwhelming. What’s going wrong?</p>
-            <p className="text-xs lg:text-xl">If you’ve spent months optimizing your website and still aren’t seeing more traffic, leads, or rankings, you’re not alone. Many service-based businesses — from HVAC and pest control to interior design and cleaning services — hit the same wall.</p>
+            <p className={`text-sm lg:text-[1.7rem] font-semibold leading-tight text-black`}>You&apos;ve invested in SEO, but the results are… underwhelming. What’s going wrong?</p>
+            <p className="text-xs lg:text-xl">If you’ve spent months optimizing your website and still aren&apos;t seeing more traffic, leads, or rankings, you’re not alone. Many service-based businesses — from HVAC and pest control to interior design and cleaning services — hit the same wall.</p>
             <p className="text-xs lg:text-xl">The good news? It’s fixable.</p>
             <p className="text-xs lg:text-xl">In this article, we’ll break down why your SEO efforts might be falling flat and, more importantly, what you can do to turn things around.</p>
             

@@ -13,7 +13,8 @@ export default function BuiltStrategySection() {
         className="mb-8 md:max-w-full lg:max-w-lg text-left md:text-center lg:text-left w-full"
       >
         <p
-          className={`text-2xl md:text-3xl font-[600] text-[#333333] mt-2 lg:max-w-[20rem] lg:mt-3 ${sora.className}`}
+          className={`text-2xl md:text-3xl font-[600] text-[#333333] mt-2 lg:max-w-[20rem] lg:mt-3`}
+          style={{ fontFamily: "Sora, system-ui, sans-serif" }}
         >
           Built to Deliver More Than Just Clicks
         </p>

@@ -25,11 +25,12 @@ export default function CommonQuestionsSection() {
         className={`max-w-4xl mx-auto text-center`}
       >
         <motion.h2
-          className={`text-xl lg:text-3xl font-semibold text-[#0C0A08] ${sora.className}`}
+          className={`text-xl lg:text-3xl font-semibold text-[#0C0A08]`}
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
           viewport={{ once: true }}
+          style={{ fontFamily: "Sora, system-ui, sans-serif" }}
         >
           Common Questions
         </motion.h2>

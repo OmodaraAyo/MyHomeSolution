@@ -13,15 +13,15 @@ export default function LetsTalk() {
     message: "",
   });
 
-  const handleChange = (e) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
   return (
-    <section className="py-12 px-4 bg-[#E4EBFF]">
+    <section id="contact" className="py-12 px-4 bg-[#E4EBFF]">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
         className="container mx-auto bg-white w-full px-7 rounded-xl flex flex-col md:flex-row justify-between py-5 gap-5"
@@ -29,15 +29,15 @@ export default function LetsTalk() {
         {/* Contact Info Card */}
         <motion.div
           initial={{ opacity: 0, x: -30 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
           viewport={{ once: true }}
           className="bg-gradient-to-tr from-[#09153C] to-[#17389D] p-4 text-left text-white w-full md:max-w-md rounded-2xl relative overflow-hidden"
         >
           <div className="flex flex-col gap-2 mb-8">
-            <p className={`font-bold text-xl tracking-widest ${sora.className}`}>Let’s Talk</p>
+            <p className={`font-bold text-xl tracking-widest ${sora.className}`}>Let&#39;s Talk</p>
             <p className="font-normal text-sm">
-              We’re here to listen—reach out and let’s explore new possibilities
+              We&#39;re here to listen—reach out and let&#39;s explore new possibilities
               together
             </p>
           </div>

@@ -32,9 +32,10 @@ export default function ChampionsSection() {
           Elevating Home Service Businesses
         </p>
         <p
-          className={`text-2xl sm:text-3xl font-[600] text-[#333333] mt-2 ${sora.className}`}
+          className={`text-2xl sm:text-3xl font-[600] text-[#333333] mt-2`}
+          style={{ fontFamily: "Sora, system-ui, sans-serif" }}
         >
-          We Love Serving Our Industry - Here’s Who We Champion Daily
+          We Love Serving Our Industry - Here&apos;s Who We Champion Daily
         </p>
       </motion.div>
       <div

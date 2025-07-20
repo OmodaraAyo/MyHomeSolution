@@ -55,7 +55,7 @@ export default function CaseStudySection() {
                 </h1>
 
                 <div>
-                  <h1 className={`font-bold text-3xl ${sora.className}`}>
+                  <h1 className={`font-bold text-3xl`} style={{ fontFamily: "Sora, system-ui, sans-serif" }}>
                     {
                       data.plan === "Interior Design" ? `${data.percentage}` : `${data.percentage}%` 
                     }

@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import sora from "@/public/assets/fonts/Sora";
-import { DisplayUSDCurrency } from "@/helpers/displayCurrency";
 import { resultsSectionData } from "@/data/case-study";
 
 export default function ResultsSection() {
@@ -17,7 +16,8 @@ export default function ResultsSection() {
         className="mb-15 mx-auto max-w-[40rem]"
       >
         <p
-          className={`text-2xl sm:text-3xl font-[600] text-[#333333] mt-2 ${sora.className}`}
+          className={`text-2xl sm:text-3xl font-[600] text-[#333333] mt-2`}
+          style={{ fontFamily: "Sora, system-ui, sans-serif" }}
         >
           Why These Results Matter
         </p>

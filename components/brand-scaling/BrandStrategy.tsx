@@ -19,14 +19,15 @@ export default function BrandStrategySection() {
           className="w-full max-w-2xl text-left flex flex-col gap-3 sm:gap-5 lg:gap-5"
         >
           <p
-            className={`text-lg sm:text-3xl font-semibold text-[#333333] ${sora.className}`}
+            className={`text-lg sm:text-3xl font-semibold text-[#333333]`}
+            style={{ fontFamily: "Sora, system-ui, sans-serif" }}
           >
             Brand Identity Strategy
           </p>
 
           <div className="text-xs sm:text-base text-[#444] space-y-4 lg:max-w-xl leading-[1.07rem] sm:leading-7">
             <p>
-              Your brand isn’t just a logo—it’s your voice and your promise. We help local service businesses build a brand that’s bold, authentic, and unforgettable.
+              Your brand isn&apos;t just a logo—it&apos;s your voice and your promise. We help local service businesses build a brand that&apos;s bold, authentic, and unforgettable.
             </p>
             <p>
               From your messaging to your visual identity, we create a system that builds trust fast and positions you as the go-to choice in your space.

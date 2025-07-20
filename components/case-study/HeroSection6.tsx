@@ -45,8 +45,8 @@ export default function HeroSection6() {
           <h1 className="text-base lg:font-semibold leading-tight text-white">
             CASE STUDIES
           </h1>
-          <p className={`text-[1.6rem] md:text-5xl font-medium lg:font-bold leading-11 md:leading-20 w-full max-w-80 sm:max-w-xl lg:max-w-3xl ${sora.className}`}>
-            We Don’t Just Build Brands, We Drive Real Results
+          <p className={`text-[1.6rem] md:text-5xl font-medium lg:font-bold leading-11 md:leading-20 w-full max-w-80 sm:max-w-xl lg:max-w-3xl`} style={{ fontFamily: "Sora, system-ui, sans-serif" }}>
+            We Don&#39;t Just Build Brands, We Drive Real Results
           </p>
           <p className="max-w-[43.2rem] text-[#FFFFFF] text-xs lg:text-lg">
             At MyHomeSolution, we help home service businesses grow with stunning websites and smart automation. From rentals to contractors, we turn clicks into clients and boost leads fast.

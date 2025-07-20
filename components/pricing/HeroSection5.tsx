@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
-import sora from "@/public/assets/fonts/Sora";
 import { pricingHeroSectionData } from "@/data/pricing";
 
 export default function HeroSection5() {
@@ -45,7 +44,8 @@ export default function HeroSection5() {
             OUR PRICING
           </h1>
           <p
-            className={`text-[1.6rem] md:text-5xl font-medium lg:font-bold leading-11 md:leading-20 w-full max-w-80 sm:max-w-xl lg:max-w-2xl ${sora.className}`}
+            className={`text-[1.6rem] md:text-5xl font-medium lg:font-bold leading-11 md:leading-20 w-full max-w-80 sm:max-w-xl lg:max-w-2xl`}
+            style={{ fontFamily: "Sora, system-ui, sans-serif" }}
           >
             Transparent Pricing Built for Growth, No Surprises
           </p>

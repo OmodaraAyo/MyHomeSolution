@@ -8,8 +8,8 @@ export default function SeoResults() {
   return (
     <div className="mt-20 w-full max-w-[66rem] lg:px-8">
       {/* Section Heading */}
-      <h2 className={`text-md md:text-[2rem] font-semibold mb-10 text-[#4A4A4A] ${sora.className}`}>
-        Common Reasons Your SEO Isn’t Delivering Results
+      <h2 className={`text-md md:text-[2rem] font-semibold mb-10 text-[#4A4A4A]`} style={{ fontFamily: "Sora, system-ui, sans-serif" }}>
+        Common Reasons Your SEO Isn&apos;t Delivering Results
       </h2>
 
       {/* Main List */}
@@ -39,7 +39,7 @@ export default function SeoResults() {
 
       {/* Quick Fix Checklist */}
       <div className="mt-16">
-        <h3 className={`text-md md:text-[1.25rem] font-bold mb-3 text-[#4A4A4A] ${sora.className}`}>Quick Fix Checklist</h3>
+        <h3 className={`text-md md:text-[1.25rem] font-bold mb-3 text-[#4A4A4A]`} style={{ fontFamily: "Sora, system-ui, sans-serif" }}>Quick Fix Checklist</h3>
         <div className="list-disc list-inside text-sm space-y-3 leading-10">
           {quickFixCheckListData.map((data, index) => (
             <motion.p
@@ -58,7 +58,7 @@ export default function SeoResults() {
 
       {/* Final Thoughts */}
       <div className="mt-12 space-y-3">
-        <h3 className={`text-md md:text-[1.25rem] font-bold text-[#4A4A4A] ${sora.className}`}>Final Thoughts</h3>
+        <h3 className={`text-md md:text-[1.25rem] font-bold text-[#4A4A4A]`} style={{ fontFamily: "Sora, system-ui, sans-serif" }}>Final Thoughts</h3>
         {finalThoughtData.map((text, index) => (
           <motion.p
             key={index}
@@ -74,7 +74,7 @@ export default function SeoResults() {
       </div>
 
       <div className='flex flex-col md:flex-row gap-3 md:gap-5 max-w-xl md:items-center mt-12'>
-        <p className={`text-[#4A4A4A] ${sora.className}`}>Need help fixing your SEO?</p>
+        <p className={`text-[#4A4A4A]`} style={{ fontFamily: "Sora, system-ui, sans-serif" }}>Need help fixing your SEO?</p>
         <Link
           href="/"
           className="flex items-center bg-[#1C3FAA] rounded-xl px-4 py-2 w-fit justify-center gap-2 text-white text-[14px] md:text-base"

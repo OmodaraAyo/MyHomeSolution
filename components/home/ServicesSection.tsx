@@ -8,7 +8,6 @@ import Image from "next/image";
 import { ArrowRight, CheckCircle } from "lucide-react";
 import { useState } from "react";
 import Link from "next/link";
-import sora from "@/public/assets/fonts/Sora";
 
 export default function ServicesSection() {
   const [activeService, setActiveService] = useState("Digital Marketing");
@@ -25,7 +24,7 @@ export default function ServicesSection() {
         viewport={{ once: true }}
         className={`text-2xl sm:text-3xl text-[#333333] mb-17 text-center flex flex-col items-center gap-5`}
       >
-        <p className={`font-semibold ${sora.className}`}>Our Services</p>
+        <p className={`font-semibold`} style={{ fontFamily: "Sora, system-ui, sans-serif" }}>Our Services</p>
 
         <div className="flex flex-wrap justify-center gap-2 sm:gap-4 bg-[#EBF0FF] px-3 py-2.5 rounded-lg max-w-lg font-medium">
           {servicesRef.map((service, index) => (

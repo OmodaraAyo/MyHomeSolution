@@ -11,8 +11,26 @@ import BuildLegacy from "@/components/home/buildLegacy";
 import BlogSection from "@/components/home/blog";
 import FoundersTestimonialSection from "@/reusables/foundersTestimonial";
 import LetsTalk from "@/reusables/letsTalk";
+import { useSearchParams, useRouter } from "next/navigation";
+import { useEffect } from "react";
 
 export default function Home() {
+  const searchParams = useSearchParams();
+  const scrollTo = searchParams.get("scrollTo")
+  const router = useRouter()
+
+  useEffect(()=> {
+    if(scrollTo) {
+      const element = document.getElementById(scrollTo);
+      if(element) {
+        setTimeout(()=> {
+          element.scrollIntoView({ behavior: "smooth"})
+          router.replace("/", { scroll: false })
+        }, 100)
+      }
+    }
+  }, [scrollTo, router])
+
   return (
     <>
       <HeroSection />

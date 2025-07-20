@@ -17,13 +17,14 @@ export default function BlogSection() {
   };
 
   return (
-    <section className="container mx-auto py-12 px-4 items-center">
+    <section id="resources" className="container mx-auto py-12 px-4 items-center">
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
-        className={`text-2xl sm:text-3xl font-semibold text-[#333333] mb-17 px-2 md:px-0 max-w-sm ${sora.className}`}
+        className={`text-2xl sm:text-3xl font-semibold text-[#333333] mb-17 px-2 md:px-0 max-w-sm`}
+        style={{ fontFamily: "Sora, system-ui, sans-serif" }}
       >
         <p className="inline font-normal text-sm border px-4 py-1 rounded-full text-[#535862] border-[#D5D7DA]">
           Blog
@@ -65,9 +66,10 @@ export default function BlogSection() {
             </p>
 
             <p
-              className={`text-lg font-semibold max-w-[490] text-ellipsis line-clamp-2 ${sora.className}`}
+              className={`text-lg font-semibold max-w-[490] text-ellipsis line-clamp-2`}
+              style={{ fontFamily: "Sora, system-ui, sans-serif" }}
             >
-              Why Your SEO Isn’t Working and How to Fix It
+              Why Your SEO Isn&#39;t Working and How to Fix It
             </p>
           </div>
         </motion.div>
@@ -116,7 +118,8 @@ export default function BlogSection() {
                 </h1>
               </div>
               <h1
-                className={`text-lg font-semibold  max-w-[490] text-ellipsis line-clamp-2 ${sora.className}`}
+                className={`text-lg font-semibold  max-w-[490] text-ellipsis line-clamp-2`}
+                style={{ fontFamily: "Sora, system-ui, sans-serif" }}
               >
                 {data.description}
               </h1>

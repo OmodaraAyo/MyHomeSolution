@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import { PhoneIncoming, ArrowRight, AlignJustify } from "lucide-react";
 import { navPages } from "@/data/navbar";
@@ -9,8 +9,8 @@ import ArrowDropDown from "@/public/assets/icons/arrowDown";
 export default function Header() {
   const pathname = usePathname();
   const [isScrolled, setIsScrolled] = useState(false);
-
   const isSpecialPage = ["/", "/pricing", "/about-us", "/case-study"].includes(pathname);
+  const router = useRouter();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,6 +27,29 @@ export default function Header() {
     : "bg-transparent text-white"
   : "bg-white text-[#777777]";
 
+  const scrollTargets: Record<string, string> = {
+    "Resources": "resources",
+    "Contact Us": "contact",
+  };
+
+  const handleNavClick = (e: React.MouseEvent, sectionId: string) => {
+    e.preventDefault();
+
+    const section = document.getElementById(sectionId);
+    if(section){
+      section.scrollIntoView({ behavior: "smooth" })
+    } else {
+      router.push(`/?scrollTo=${sectionId}`)
+    }
+  }
+
+  const handleConditionalScroll = (e: React.MouseEvent<HTMLAnchorElement>,pageName: string) => {
+  const targetId = scrollTargets[pageName];
+  if (targetId) {
+    handleNavClick(e, targetId);
+  }
+};
+
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-300 ${navClasses}`}
@@ -37,21 +60,31 @@ export default function Header() {
 
         {/* Desktop Navigation */}
         <div className="hidden xl:flex items-center justify-between w-full">
-            {navPages.map((page, index) => (
-              <div key={index}>
-                {page.name === "Services" || page.name === "Industries" ? (
-                  <a href={page.href} className="hover:text-blue-500 px-4 py-2 flex items-center">
-                    <p>{page.name}</p>
-                    <ArrowDropDown/>
-                  </a>
-                ) : (
-                  <a href={page.href} className="hover:text-blue-500 px-4 py-2">
-                    {page.name}
-                  </a>
-                )}
-              </div>
-            ))}
-         
+          {navPages.map((page, index) => (
+            <div key={index}>
+              {scrollTargets[page.name] ? (
+                <a
+                  href={page.href}
+                  onClick={(e) => handleConditionalScroll(e, page.name)}
+                  className="hover:text-blue-500 px-4 py-2"
+                >
+                  {page.name}
+                </a>
+              ) : page.name === "Services" || page.name === "Industries" ? (
+                <a
+                  href={page.href}
+                  className="hover:text-blue-500 px-4 py-2 flex items-center"
+                >
+                  <p>{page.name}</p>
+                  <ArrowDropDown />
+                </a>
+              ) : (
+                <a href={page.href} className="hover:text-blue-500 px-4 py-2">
+                  {page.name}
+                </a>
+              )}
+            </div>
+          ))}
 
           <div className="flex items-center">
             <Link

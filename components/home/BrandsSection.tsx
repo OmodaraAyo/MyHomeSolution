@@ -11,7 +11,8 @@ export default function BrandsSection() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
-        className={`text-2xl sm:text-3xl font-[600] text-[#333333] mt-2 marker:container mx-auto max-w-lg mb-17 text-center ${sora.className}`}
+        className={`text-2xl sm:text-3xl font-[600] text-[#333333] mt-2 marker:container mx-auto max-w-lg mb-17 text-center`}
+        style={{ fontFamily: "Sora, system-ui, sans-serif" }}
       >
         Trusted by Local Service Legends and Global Hosts
       </motion.h2>

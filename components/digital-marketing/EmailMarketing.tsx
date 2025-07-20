@@ -19,7 +19,8 @@ export default function EmailMarketingSection() {
           className="w-full max-w-2xl text-left flex flex-col gap-3 sm:gap-5 lg:gap-5"
         >
           <p
-            className={`text-lg sm:text-3xl font-semibold text-[#333333] ${sora.className}`}
+            className={`text-lg sm:text-3xl font-semibold text-[#333333]`}
+            style={{ fontFamily: "Sora, system-ui, sans-serif" }}
           >
             Email Marketing
           </p>
@@ -28,7 +29,7 @@ export default function EmailMarketingSection() {
             <p>
               Repeat business is the backbone of home service success—and email
               is how you get it. Our tailored campaigns nurture leads, follow up
-              with past customers, and drive new bookings with offers they can’t
+              with past customers, and drive new bookings with offers they can&apos;t
               ignore.
             </p>
             <p>

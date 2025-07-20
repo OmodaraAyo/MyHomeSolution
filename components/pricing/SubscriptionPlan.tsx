@@ -5,7 +5,6 @@ import { pricingPlanData } from "@/data/home";
 import { Check } from "lucide-react";
 import { DisplayUSDCurrency } from "@/helpers/displayCurrency";
 import { useState, useEffect } from "react";
-import sora from "@/public/assets/fonts/Sora";
 
 export default function SubscriptionPlan() {
   const [isLargeScreen, setIsLargeScreen] = useState(false);
@@ -57,7 +56,8 @@ export default function SubscriptionPlan() {
               >
                 <div>
                   <h1
-                    className={`text-2xl font-semibold mb-1 ${sora.className}`}
+                    className={`text-2xl font-semibold mb-1`}
+                    style={{ fontFamily: "Sora, system-ui, sans-serif" }}
                   >
                     {data.plan}
                   </h1>
@@ -67,7 +67,7 @@ export default function SubscriptionPlan() {
                 <div>
                   {data.price ? (
                     <div className="flex items-end">
-                      <h1 className={`font-bold text-4xl ${sora.className}`}>
+                      <h1 className={`font-bold text-4xl`} style={{ fontFamily: "Sora, system-ui, sans-serif" }}>
                         {DisplayUSDCurrency(parseFloat(data.price))}
                       </h1>
                       <p className="font-medium text-lg tracking-wide">
@@ -103,7 +103,8 @@ export default function SubscriptionPlan() {
 
         <div className="flex flex-col xl:flex-row items-center justify-center gap-2.5 lg:gap-7 mt-4 md:mt-6">
           <p
-            className={`font-medium text-sm lg:text-2xl text-[#4A4A4A] ${sora.className}`}
+            className={`font-medium text-sm lg:text-2xl text-[#4A4A4A]`}
+            style={{ fontFamily: "Sora, system-ui, sans-serif" }}
           >
             Need help choosing a plan?
           </p>

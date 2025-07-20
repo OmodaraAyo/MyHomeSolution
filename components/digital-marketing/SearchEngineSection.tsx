@@ -19,22 +19,23 @@ export default function SearchEngineSection() {
           className="w-full max-w-2xl text-left flex flex-col gap-3 sm:gap-5 lg:gap-5"
         >
           <p
-            className={`text-lg sm:text-3xl font-semibold text-[#333333] ${sora.className}`}
+            className={`text-lg sm:text-3xl font-semibold text-[#333333]`}
+            style={{ fontFamily: "Sora, system-ui, sans-serif" }}
           >
             Search Engine Optimization
           </p>
 
           <div className="text-xs sm:text-base text-[#444] space-y-4 lg:max-w-xl leading-[1.07rem] sm:leading-7">
             <p>
-              If your business isn’t ranking locally, your competitors are
+              If your business isn&apos;t ranking locally, your competitors are
               taking your leads. We make sure your home service brand dominates
-              local search—so when people Google “best plumber near me,” it’s
+              local search—so when people Google “best plumber near me,” it&apos;s
               your name they click.
             </p>
             <p>
               From local citations to Google My Business optimization, we ensure
-              you get found first, trusted more, and booked faster. It’s not
-              just about traffic—it’s about revenue from organic leads that
+              you get found first, trusted more, and booked faster. It&apos;s not
+              just about traffic—it&apos;s about revenue from organic leads that
               convert.
             </p>
           </div>

@@ -49,9 +49,9 @@ export const airbnbRentalsData = {
   description1:
     "Running a successful Airbnb or short-term rental brand means juggling turnover schedules, guest expectations, and non-stop inquiries. We help you turn that chaos into a conversion machine—powered by clean branding, automated lead flows, and a website that does the talking for you. From instant booking integrations to review management and guest messaging automation, we make you the preferred host in your city.",
   description2:
-    "Our full-stack solutions cover everything from search optimization and CRM automation to real-time availability and SEO-rich content. Want to be booked solid month after month? You need more than great photos—you need a full digital system built for growth. That’s where we come in.",
+    "Our full-stack solutions cover everything from search optimization and CRM automation to real-time availability and SEO-rich content. Want to be booked solid month after month? You need more than great photos—you need a full digital system built for growth. That's where we come in.",
   testimonial:
-    "Since partnering with MyHomeSolution, our booking rate jumped 45% in three months. Their team automated our guest follow-ups, revamped our site, and made our brand stand out. It’s like we hired a full tech team without the overhead!",
+    "Since partnering with MyHomeSolution, our booking rate jumped 45% in three months. Their team automated our guest follow-ups, revamped our site, and made our brand stand out. It's like we hired a full tech team without the overhead!",
   authorName: "Tina A M.,",
   authorPosition: "Co-founder, PrimeNest Short Stays",
   gridImgBgPrimarycolor: "#FFF8E5",
@@ -72,7 +72,7 @@ export const airbnbRentalsData = {
     {
       title: "Conversion-Ready Web Design",
       description:
-        "Your custom branded website doesn’t just look great—it drives direct bookings and builds long-term loyalty.",
+        "Your custom branded website doesn't just look great—it drives direct bookings and builds long-term loyalty.",
       image: "/assets/images/industries/HerosectionFrame1.svg",
     },
   ],
@@ -729,3 +729,514 @@ export const appliancesInstallationData = {
 //created by Omodara Ayodele
 //github: OmodaraAyo
 
+{/**Home Renovation and Construction services */}
+
+export const homeRenovationAndConstructionServicesData = {
+  title: "INDUSTRIES WE SERVE",
+  subTitle: "Home Renovation & Construction Services",
+  description: "Showcase your craftsmanship, win more projects, and build a powerful online presence tailored for renovation and construction businesses."
+}
+
+//created by Omodara Ayodele
+//github: OmodaraAyo
+
+export const remodelingData = {
+  id: 1,
+  bgPrimaryColor: "#EEF2FF",
+  bgSecondaryColor: "#EEF2FF",
+  componentTitle: "Kitchen & Bathroom Remmodeling",
+  description1:
+    "Every day, potential customers are actively searching online for plumbing services — often in your exact service area. But in a crowded market, simply being online isn't enough. If your business isn't showing up where it matters or standing out when it does, you're losing leads to competitors who've built stronger digital visibility.",
+  description2:
+    "At MyHomeSolution, we specialize in helping plumbing businesses rise to the top with proven digital marketing strategies. From local SEO and PPC to website optimization and reputation management, we make sure your business not only gets found — but gets chosen. Let's turn online searches into booked jobs and long-term customers.",
+  testimonial:
+    "We started showing up on local search and getting more calls within weeks. MyHomeSolution works.",
+  authorName: "Chris M., ",
+  authorPosition: "FlowRight Plumbing",
+  gridImgBgPrimarycolor: "#FFF8E5",
+  gridImgBgSecondarycolor: "#FFF8E5",
+  gridData: [
+    {
+      title: "Automation That Works for You",
+      description:
+        "AI chatbots, CRM workflows, and scheduling systems that save time and convert better.",
+      image: "/assets/images/industries/HerosectionFrame1.svg",
+    },
+    {
+      title: "Real-Time Analytics & Insights",
+      description:
+        "Make smarter decisions with custom reports, dashboards, and KPI tracking.",
+      image: "/assets/images/industries/HerosectionFrame1.svg",
+    },
+    {
+      title: "Conversion Optimization Built-In",
+      description:
+        "Turn website traffic into booked services with CRO tactics tailored to your audience.",
+      image: "/assets/images/industries/HerosectionFrame1.svg",
+    },
+  ],
+  approachComponentData: [
+    {
+      id: 1,
+      title: "Industry-Specific Expertise",
+      description:
+        "With over a decade of experience in plumbing marketing, we know what works and how to position your business for long-term success.",
+    },
+    {
+      id: 2,
+      title: "Comprehensive Digital Strategy",
+      description:
+        "From local SEO to content marketing and ad tracking, we manage every part of your online presence to attract and convert high-quality leads.",
+    },
+    {
+      id: 3,
+      title: "Data-Driven Results",
+      description:
+        "We don't guess, we measure. Every campaign is backed by analytics, proving real growth in calls, bookings, and revenue.",
+    },
+  ],
+};
+
+//created by Omodara Ayodele
+//github: OmodaraAyo
+
+export const roofingContractorsData = {
+  id: 2,
+  bgPrimaryColor: "#FFF8E5",
+  bgSecondaryColor: "#FFF8E5",
+  componentTitle: "Roofing Contractors",
+  description1:
+    "Every day, potential customers are actively searching online for plumbing services — often in your exact service area. But in a crowded market, simply being online isn't enough. If your business isn't showing up where it matters or standing out when it does, you're losing leads to competitors who've built stronger digital visibility.",
+  description2:
+    "At MyHomeSolution, we specialize in helping plumbing businesses rise to the top with proven digital marketing strategies. From local SEO and PPC to website optimization and reputation management, we make sure your business not only gets found — but gets chosen. Let's turn online searches into booked jobs and long-term customers.",
+  testimonial:
+    "We started showing up on local search and getting more calls within weeks. MyHomeSolution works.",
+  authorName: "Chris M., ",
+  authorPosition: " FlowRight Plumbing",
+  gridImgBgPrimarycolor: "#EEF2FF",
+  gridImgBgSecondarycolor: "#EEF2FF",
+  gridData: [
+    {
+      title: "Automation That Works for You",
+      description:
+        "AI chatbots, CRM workflows, and scheduling systems that save time and convert better.",
+      image: "/assets/images/industries/HerosectionFrame1.svg",
+    },
+    {
+      title: "Real-Time Analytics & Insights",
+      description:
+        "Make smarter decisions with custom reports, dashboards, and KPI tracking.",
+      image: "/assets/images/industries/HerosectionFrame1.svg",
+    },
+    {
+      title: "Conversion Optimization Built-In",
+      description:
+        "Turn website traffic into booked services with CRO tactics tailored to your audience.",
+      image: "/assets/images/industries/HerosectionFrame1.svg",
+    },
+  ],
+  approachComponentData: [
+    {
+      id: 1,
+      title: "Industry-Specific Expertise",
+      description:
+        "With over a decade of experience in plumbing marketing, we know what works and how to position your business for long-term success.",
+    },
+    {
+      id: 2,
+      title: "Comprehensive Digital Strategy",
+      description:
+        "From local SEO to content marketing and ad tracking, we manage every part of your online presence to attract and convert high-quality leads.",
+    },
+    {
+      id: 3,
+      title: "Data-Driven Results",
+      description:
+        "We don't guess, we measure. Every campaign is backed by analytics, proving real growth in calls, bookings, and revenue.",
+    },
+  ],
+};
+
+//created by Omodara Ayodele
+//github: OmodaraAyo
+
+export const flooringContractorsData = {
+  id: 3,
+  bgPrimaryColor: "#E9F9F1",
+  bgSecondaryColor: "#E9F9F1",
+  componentTitle: "Flooring Contractors",
+  description1:
+    "Every day, potential customers are actively searching online for plumbing services — often in your exact service area. But in a crowded market, simply being online isn't enough. If your business isn't showing up where it matters or standing out when it does, you're losing leads to competitors who've built stronger digital visibility.",
+  description2:
+    "At MyHomeSolution, we specialize in helping plumbing businesses rise to the top with proven digital marketing strategies. From local SEO and PPC to website optimization and reputation management, we make sure your business not only gets found — but gets chosen. Let's turn online searches into booked jobs and long-term customers.",
+  testimonial:
+    "We started showing up on local search and getting more calls within weeks. MyHomeSolution works.",
+  authorName: "Chris M., ",
+  authorPosition: "FlowRight Plumbing",
+  gridImgBgPrimarycolor: "#FFF8E5",
+  gridImgBgSecondarycolor: "#FFF8E5",
+  gridData: [
+    {
+      title: "Automation That Works for You",
+      description:
+        "AI chatbots, CRM workflows, and scheduling systems that save time and convert better.",
+      image: "/assets/images/industries/HerosectionFrame1.svg",
+    },
+    {
+      title: "Real-Time Analytics & Insights",
+      description:
+        "Make smarter decisions with custom reports, dashboards, and KPI tracking.",
+      image: "/assets/images/industries/HerosectionFrame1.svg",
+    },
+    {
+      title: "Conversion Optimization Built-In",
+      description:
+        "Turn website traffic into booked services with CRO tactics tailored to your audience.",
+      image: "/assets/images/industries/HerosectionFrame1.svg",
+    },
+  ],
+  approachComponentData: [
+    {
+      id: 1,
+      title: "Industry-Specific Expertise",
+      description:
+        "With over a decade of experience in plumbing marketing, we know what works and how to position your business for long-term success.",
+    },
+    {
+      id: 2,
+      title: "Comprehensive Digital Strategy",
+      description:
+        "From local SEO to content marketing and ad tracking, we manage every part of your online presence to attract and convert high-quality leads.",
+    },
+    {
+      id: 3,
+      title: "Data-Driven Results",
+      description:
+        "We don't guess, we measure. Every campaign is backed by analytics, proving real growth in calls, bookings, and revenue.",
+    },
+  ],
+};
+
+//created by Omodara Ayodele
+//github: OmodaraAyo
+
+
+{/**Home Design and Aesthetic Enchancement */}
+
+export const homeDesignAndAestheticEnhancementData = {
+  title: "INDUSTRIES WE SERVE",
+  subTitle: "Home Design & Aesthetic Enhancement",
+  description: "Highlight your creative vision and attract high-value clients with a digital presence built for interior designers and home aesthetics professionals."
+}
+
+//created by Omodara Ayodele
+//github: OmodaraAyo
+
+export const interiorDesignersData = {
+  id: 1,
+  bgPrimaryColor: "#EEF2FF",
+  bgSecondaryColor: "#EEF2FF",
+  componentTitle: "Interior Designers",
+  description1:
+    "Every day, potential customers are actively searching online for plumbing services — often in your exact service area. But in a crowded market, simply being online isn't enough. If your business isn't showing up where it matters or standing out when it does, you're losing leads to competitors who've built stronger digital visibility.",
+  description2:
+    "At MyHomeSolution, we specialize in helping plumbing businesses rise to the top with proven digital marketing strategies. From local SEO and PPC to website optimization and reputation management, we make sure your business not only gets found — but gets chosen. Let's turn online searches into booked jobs and long-term customers.",
+  testimonial:
+    "We started showing up on local search and getting more calls within weeks. MyHomeSolution works.",
+  authorName: "Chris M., ",
+  authorPosition: "FlowRight Plumbing",
+  gridImgBgPrimarycolor: "#FFF8E5",
+  gridImgBgSecondarycolor: "#FFF8E5",
+  gridData: [
+    {
+      title: "Automation That Works for You",
+      description:
+        "AI chatbots, CRM workflows, and scheduling systems that save time and convert better.",
+      image: "/assets/images/industries/HerosectionFrame1.svg",
+    },
+    {
+      title: "Real-Time Analytics & Insights",
+      description:
+        "Make smarter decisions with custom reports, dashboards, and KPI tracking.",
+      image: "/assets/images/industries/HerosectionFrame1.svg",
+    },
+    {
+      title: "Conversion Optimization Built-In",
+      description:
+        "Turn website traffic into booked services with CRO tactics tailored to your audience.",
+      image: "/assets/images/industries/HerosectionFrame1.svg",
+    },
+  ],
+  approachComponentData: [
+    {
+      id: 1,
+      title: "Industry-Specific Expertise",
+      description:
+        "With over a decade of experience in plumbing marketing, we know what works and how to position your business for long-term success.",
+    },
+    {
+      id: 2,
+      title: "Comprehensive Digital Strategy",
+      description:
+        "From local SEO to content marketing and ad tracking, we manage every part of your online presence to attract and convert high-quality leads.",
+    },
+    {
+      id: 3,
+      title: "Data-Driven Results",
+      description:
+        "We don't guess, we measure. Every campaign is backed by analytics, proving real growth in calls, bookings, and revenue.",
+    },
+  ],
+};
+
+//created by Omodara Ayodele
+//github: OmodaraAyo
+
+export const furnitureMakerData = { 
+  id: 2,
+  bgPrimaryColor: "#FFF8E5",
+  bgSecondaryColor: "#FFF8E5",
+  componentTitle: "Custom Furniture Makers",
+  description1:
+    "Every day, potential customers are actively searching online for plumbing services — often in your exact service area. But in a crowded market, simply being online isn't enough. If your business isn't showing up where it matters or standing out when it does, you're losing leads to competitors who've built stronger digital visibility.",
+  description2:
+    "At MyHomeSolution, we specialize in helping plumbing businesses rise to the top with proven digital marketing strategies. From local SEO and PPC to website optimization and reputation management, we make sure your business not only gets found — but gets chosen. Let's turn online searches into booked jobs and long-term customers.",
+  testimonial:
+    "We started showing up on local search and getting more calls within weeks. MyHomeSolution works.",
+  authorName: "Chris M., ",
+  authorPosition: " FlowRight Plumbing",
+  gridImgBgPrimarycolor: "#EEF2FF",
+  gridImgBgSecondarycolor: "#EEF2FF",
+  gridData: [
+    {
+      title: "Automation That Works for You",
+      description:
+        "AI chatbots, CRM workflows, and scheduling systems that save time and convert better.",
+      image: "/assets/images/industries/HerosectionFrame1.svg",
+    },
+    {
+      title: "Real-Time Analytics & Insights",
+      description:
+        "Make smarter decisions with custom reports, dashboards, and KPI tracking.",
+      image: "/assets/images/industries/HerosectionFrame1.svg",
+    },
+    {
+      title: "Conversion Optimization Built-In",
+      description:
+        "Turn website traffic into booked services with CRO tactics tailored to your audience.",
+      image: "/assets/images/industries/HerosectionFrame1.svg",
+    },
+  ],
+  approachComponentData: [
+    {
+      id: 1,
+      title: "Industry-Specific Expertise",
+      description:
+        "With over a decade of experience in plumbing marketing, we know what works and how to position your business for long-term success.",
+    },
+    {
+      id: 2,
+      title: "Comprehensive Digital Strategy",
+      description:
+        "From local SEO to content marketing and ad tracking, we manage every part of your online presence to attract and convert high-quality leads.",
+    },
+    {
+      id: 3,
+      title: "Data-Driven Results",
+      description:
+        "We don't guess, we measure. Every campaign is backed by analytics, proving real growth in calls, bookings, and revenue.",
+    },
+  ],
+};
+
+//created by Omodara Ayodele
+//github: OmodaraAyo
+
+
+{/**Comfort, Wellness and Smart Living */}
+
+export const smartLivingData = {
+  title: "INDUSTRIES WE SERVE",
+  subTitle: "Comfort, Wellness & Smart Living",
+  description: "Promote modern, wellness-focused, and tech-enabled living solutions with digital strategies designed to connect you with today's smart home consumers."
+}
+
+export const homeSecurityData = {
+  id: 1,
+  bgPrimaryColor: "#EEF2FF",
+  bgSecondaryColor: "#EEF2FF",
+  componentTitle: "Home Security",
+  description1:
+    "Every day, potential customers are actively searching online for plumbing services — often in your exact service area. But in a crowded market, simply being online isn't enough. If your business isn't showing up where it matters or standing out when it does, you're losing leads to competitors who've built stronger digital visibility.",
+  description2:
+    "At MyHomeSolution, we specialize in helping plumbing businesses rise to the top with proven digital marketing strategies. From local SEO and PPC to website optimization and reputation management, we make sure your business not only gets found — but gets chosen. Let's turn online searches into booked jobs and long-term customers.",
+  testimonial:
+    "We started showing up on local search and getting more calls within weeks. MyHomeSolution works.",
+  authorName: "Chris M., ",
+  authorPosition: "FlowRight Plumbing",
+  gridImgBgPrimarycolor: "#FFF8E5",
+  gridImgBgSecondarycolor: "#FFF8E5",
+  gridData: [
+    {
+      title: "Automation That Works for You",
+      description:
+        "AI chatbots, CRM workflows, and scheduling systems that save time and convert better.",
+      image: "/assets/images/industries/HerosectionFrame1.svg",
+    },
+    {
+      title: "Real-Time Analytics & Insights",
+      description:
+        "Make smarter decisions with custom reports, dashboards, and KPI tracking.",
+      image: "/assets/images/industries/HerosectionFrame1.svg",
+    },
+    {
+      title: "Conversion Optimization Built-In",
+      description:
+        "Turn website traffic into booked services with CRO tactics tailored to your audience.",
+      image: "/assets/images/industries/HerosectionFrame1.svg",
+    },
+  ],
+  approachComponentData: [
+    {
+      id: 1,
+      title: "Industry-Specific Expertise",
+      description:
+        "With over a decade of experience in plumbing marketing, we know what works and how to position your business for long-term success.",
+    },
+    {
+      id: 2,
+      title: "Comprehensive Digital Strategy",
+      description:
+        "From local SEO to content marketing and ad tracking, we manage every part of your online presence to attract and convert high-quality leads.",
+    },
+    {
+      id: 3,
+      title: "Data-Driven Results",
+      description:
+        "We don't guess, we measure. Every campaign is backed by analytics, proving real growth in calls, bookings, and revenue.",
+    },
+  ],
+};
+
+//created by Omodara Ayodele
+//github: OmodaraAyo
+
+export const hvacData = {
+  id: 2,
+  bgPrimaryColor: "#FFF8E5",
+  bgSecondaryColor: "#FFF8E5",
+  componentTitle: "HVAC",
+  description1:
+    "Every day, potential customers are actively searching online for plumbing services — often in your exact service area. But in a crowded market, simply being online isn't enough. If your business isn't showing up where it matters or standing out when it does, you're losing leads to competitors who've built stronger digital visibility.",
+  description2:
+    "At MyHomeSolution, we specialize in helping plumbing businesses rise to the top with proven digital marketing strategies. From local SEO and PPC to website optimization and reputation management, we make sure your business not only gets found — but gets chosen. Let's turn online searches into booked jobs and long-term customers.",
+  testimonial:
+    "We started showing up on local search and getting more calls within weeks. MyHomeSolution works.",
+  authorName: "Chris M., ",
+  authorPosition: " FlowRight Plumbing",
+  gridImgBgPrimarycolor: "#EEF2FF",
+  gridImgBgSecondarycolor: "#EEF2FF",
+  gridData: [
+    {
+      title: "Automation That Works for You",
+      description:
+        "AI chatbots, CRM workflows, and scheduling systems that save time and convert better.",
+      image: "/assets/images/industries/HerosectionFrame1.svg",
+    },
+    {
+      title: "Real-Time Analytics & Insights",
+      description:
+        "Make smarter decisions with custom reports, dashboards, and KPI tracking.",
+      image: "/assets/images/industries/HerosectionFrame1.svg",
+    },
+    {
+      title: "Conversion Optimization Built-In",
+      description:
+        "Turn website traffic into booked services with CRO tactics tailored to your audience.",
+      image: "/assets/images/industries/HerosectionFrame1.svg",
+    },
+  ],
+  approachComponentData: [
+    {
+      id: 1,
+      title: "Industry-Specific Expertise",
+      description:
+        "With over a decade of experience in plumbing marketing, we know what works and how to position your business for long-term success.",
+    },
+    {
+      id: 2,
+      title: "Comprehensive Digital Strategy",
+      description:
+        "From local SEO to content marketing and ad tracking, we manage every part of your online presence to attract and convert high-quality leads.",
+    },
+    {
+      id: 3,
+      title: "Data-Driven Results",
+      description:
+        "We don't guess, we measure. Every campaign is backed by analytics, proving real growth in calls, bookings, and revenue.",
+    },
+  ],
+};
+
+//created by Omodara Ayodele
+//github: OmodaraAyo
+
+export const pestControlData = {
+  id: 3,
+  bgPrimaryColor: "#E9F9F1",
+  bgSecondaryColor: "#E9F9F1",
+  componentTitle: "Pest Control",
+  description1:
+    "Every day, potential customers are actively searching online for plumbing services — often in your exact service area. But in a crowded market, simply being online isn't enough. If your business isn't showing up where it matters or standing out when it does, you're losing leads to competitors who've built stronger digital visibility.",
+  description2:
+    "At MyHomeSolution, we specialize in helping plumbing businesses rise to the top with proven digital marketing strategies. From local SEO and PPC to website optimization and reputation management, we make sure your business not only gets found — but gets chosen. Let's turn online searches into booked jobs and long-term customers.",
+  testimonial:
+    "We started showing up on local search and getting more calls within weeks. MyHomeSolution works.",
+  authorName: "Chris M., ",
+  authorPosition: "FlowRight Plumbing",
+  gridImgBgPrimarycolor: "#FFF8E5",
+  gridImgBgSecondarycolor: "#FFF8E5",
+  gridData: [
+    {
+      title: "Automation That Works for You",
+      description:
+        "AI chatbots, CRM workflows, and scheduling systems that save time and convert better.",
+      image: "/assets/images/industries/HerosectionFrame1.svg",
+    },
+    {
+      title: "Real-Time Analytics & Insights",
+      description:
+        "Make smarter decisions with custom reports, dashboards, and KPI tracking.",
+      image: "/assets/images/industries/HerosectionFrame1.svg",
+    },
+    {
+      title: "Conversion Optimization Built-In",
+      description:
+        "Turn website traffic into booked services with CRO tactics tailored to your audience.",
+      image: "/assets/images/industries/HerosectionFrame1.svg",
+    },
+  ],
+  approachComponentData: [
+    {
+      id: 1,
+      title: "Industry-Specific Expertise",
+      description:
+        "With over a decade of experience in plumbing marketing, we know what works and how to position your business for long-term success.",
+    },
+    {
+      id: 2,
+      title: "Comprehensive Digital Strategy",
+      description:
+        "From local SEO to content marketing and ad tracking, we manage every part of your online presence to attract and convert high-quality leads.",
+    },
+    {
+      id: 3,
+      title: "Data-Driven Results",
+      description:
+        "We don't guess, we measure. Every campaign is backed by analytics, proving real growth in calls, bookings, and revenue.",
+    },
+  ],
+};
+
+//created by Omodara Ayodele
+//github: OmodaraAyo
