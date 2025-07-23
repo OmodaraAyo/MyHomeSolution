@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Sora, Quicksand } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/header";
-import Footer from "@/components/footer";
+import LayoutWrapper from "./layoutWrapper";
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"]});
@@ -12,7 +11,7 @@ const quicksand = Quicksand({ variable: "--font-quicksand", subsets: ["latin"] }
 export const metadata: Metadata = {
   title: "My Home Solution",
   description:
-    "Send, receive, and save money with zero fees using Veegil Bank — Nigeria’s trusted online banking platform.",
+    "best service provider",
 };
 
 export default function RootLayout({
@@ -20,12 +19,8 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} ${sora.variable} ${quicksand.variable} antialiased`}
-      >
-       <Header/> 
-        <div className="min-h-[calc(100vh-120px)]">{children}</div>
-        <Footer/>
+      <body className={`${geistSans.variable} ${geistMono.variable} ${sora.variable} ${quicksand.variable} antialiased`}>
+       <LayoutWrapper>{children}</LayoutWrapper>
       </body>
     </html>
   );

@@ -2,7 +2,6 @@ import React from 'react';
 import { quickFixCheckListData, seoResultsData, finalThoughtData } from '@/data/blog';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import sora from "@/public/assets/fonts/Sora";
 
 export default function SeoResults() {
   return (

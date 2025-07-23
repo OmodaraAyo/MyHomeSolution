@@ -2,7 +2,6 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { homeData } from "@/data/home";
 import Link from "next/link";
-import sora from "@/public/assets/fonts/Sora";
 
 export default function HeroSection() {
   return (

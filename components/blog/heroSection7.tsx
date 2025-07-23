@@ -1,7 +1,5 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
-import Link from "next/link";
-import sora from "@/public/assets/fonts/Sora";
 import { blogSectionData } from "@/data/blog";
 import SeoResults from "./seoResults";
 

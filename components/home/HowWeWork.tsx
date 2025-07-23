@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { howWeWorkData, howWeWorkImage } from "@/data/home";
 import Image from "next/image";
 import { useState } from "react";
-import sora from "@/public/assets/fonts/Sora";
 
 export default function HowWeWorkSection() {
   const [isHovered, setIsHovered] = useState<number | null>(null);

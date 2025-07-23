@@ -4,7 +4,7 @@ import { championData } from "@/data/home";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { useRef } from "react";
-import sora from "@/public/assets/fonts/Sora";
+
 export default function ChampionsSection() {
   const scrollElement = useRef<HTMLDivElement>(null);
 

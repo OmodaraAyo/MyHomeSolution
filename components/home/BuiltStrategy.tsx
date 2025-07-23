@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { strategyData } from "@/data/home";
 import Image from "next/image";
-import sora from "@/public/assets/fonts/Sora";
 export default function BuiltStrategySection() {
   return (
     <section className="container mx-auto py-16 px-4 text-center flex flex-col lg:flex-row items-start justify-between">

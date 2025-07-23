@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
-import sora from "@/public/assets/fonts/Sora";
 import { aboutUsHeroSectionData } from "@/data/about-us";
 import useIsMobile from "@/hooks/useIsMobile";
 

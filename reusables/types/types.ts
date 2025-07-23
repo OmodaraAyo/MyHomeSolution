@@ -37,3 +37,12 @@ export interface HeroSection8Props {
 
 //created by Omodara Ayodele
 //github: OmodaraAyo
+
+export interface SidebarLinkProps {
+  iconSrc: string;
+  label: string;
+  active?: boolean;
+};
+
+//created by Omodara Ayodele
+//github: OmodaraAyo

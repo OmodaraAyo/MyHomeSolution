@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import sora from "@/public/assets/fonts/Sora";
 import { resultsSectionData } from "@/data/case-study";
 
 export default function ResultsSection() {

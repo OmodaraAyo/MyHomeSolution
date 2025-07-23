@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import sora from "@/public/assets/fonts/Sora";
 import { useState, useEffect } from "react";
 import { Check, ArrowRight } from "lucide-react";
 import Link from "next/link";

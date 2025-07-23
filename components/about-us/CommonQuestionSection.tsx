@@ -1,7 +1,6 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import { Plus, Minus } from "lucide-react";
-import sora from "@/public/assets/fonts/Sora";
 import { faqs } from "@/data/about-us";
 
 export default function CommonQuestionsSection() {

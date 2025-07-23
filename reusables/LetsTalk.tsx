@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import sora from "@/public/assets/fonts/Sora";
 import { contactInfos } from "@/data/home";
 import { useState } from "react";
 
@@ -35,7 +34,7 @@ export default function LetsTalk() {
           className="bg-gradient-to-tr from-[#09153C] to-[#17389D] p-4 text-left text-white w-full md:max-w-md rounded-2xl relative overflow-hidden"
         >
           <div className="flex flex-col gap-2 mb-8">
-            <p className={`font-bold text-xl tracking-widest ${sora.className}`}>Let&#39;s Talk</p>
+            <p className={`font-bold text-xl tracking-widest`} style={{ fontFamily: "Sora, system-ui sans-serif" }}>   Let&#39;s Talk</p>
             <p className="font-normal text-sm">
               We&#39;re here to listen—reach out and let&#39;s explore new possibilities
               together

@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import sora from "@/public/assets/fonts/Sora";
 import { ArrowRight } from "lucide-react";
 import { heroSectionData } from "@/data/growth-marketing";
 

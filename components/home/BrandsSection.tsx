@@ -1,5 +1,4 @@
 import { brandData } from "@/data/home";
-import sora from "@/public/assets/fonts/Sora";
 import { motion } from "framer-motion";
 import Image from "next/image";
 

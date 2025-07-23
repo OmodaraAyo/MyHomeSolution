@@ -5,7 +5,6 @@ import { pricingPlanData } from "@/data/home";
 import { Check } from "lucide-react";
 import { DisplayUSDCurrency } from "@/helpers/displayCurrency";
 import { useState, useEffect } from "react";
-import sora from "@/public/assets/fonts/Sora";
 
 export default function PricingPlanSection() {
   const [isLargeScreen, setIsLargeScreen] = useState(false);

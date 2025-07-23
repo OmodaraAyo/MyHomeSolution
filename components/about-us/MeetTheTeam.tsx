@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
-import sora from "@/public/assets/fonts/Sora";
 import { useState, useEffect } from "react";
 import { teamSectionData } from "@/data/about-us";
 import { Linkedin } from "lucide-react";

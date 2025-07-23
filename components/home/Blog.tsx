@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { blogData, blogImages, howWeWorkImage } from "@/data/home";
 import Image from "next/image";
 import { useState } from "react";
-import sora from "@/public/assets/fonts/Sora";
 import { ArrowUpRight } from "lucide-react";
 
 export default function BlogSection() {

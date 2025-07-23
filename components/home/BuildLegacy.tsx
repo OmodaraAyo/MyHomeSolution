@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { buildLegacyData } from "@/data/home";
-import sora from "@/public/assets/fonts/Sora";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 

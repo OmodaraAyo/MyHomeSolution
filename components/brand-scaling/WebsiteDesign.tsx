@@ -3,7 +3,6 @@ import { serviceSectionImages } from "@/data/home";
 import Image from "next/image";
 import { CheckCircle } from "lucide-react";
 import Link from "next/link";
-import sora from "@/public/assets/fonts/Sora";
 import { websiteDesignSectionData } from "@/data/brand-scaling";
 
 export default function WebsiteDesignSection() {
