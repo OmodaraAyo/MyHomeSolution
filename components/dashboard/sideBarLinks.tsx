@@ -2,14 +2,17 @@
 import { SidebarLinkProps } from "@/reusables/types/types";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export function SidebarLinks(props: SidebarLinkProps) {
-  const { iconSrc, label, active = false, link } = props;
+  const { iconSrc, label, link } = props;
+  const pathname = usePathname();
+  const isActive = pathname === link
   return (
     <Link
       href={link}
       className={`flex items-center gap-3 px-4 py-2 rounded-md text-sm font-medium cursor-pointer transition 
-        ${active ? "bg-white text-[#1C3FAA]" : "hover:bg-white/10 text-white"}`}
+        ${isActive ? "bg-white/10 text-white" : "hover:bg-white/10 text-[#BBBBBB]"}`}
     >
       <Image
         src={iconSrc}

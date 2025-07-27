@@ -1,7 +1,7 @@
 export interface GridType {
-    image: string;
-    title: string;
-    description: string;
+  image: string;
+  title: string;
+  description: string;
 }
 
 //created by Omodara Ayodele
@@ -30,9 +30,9 @@ export interface ApproachComponentProps {
 //created by Omodara Ayodele
 //github: OmodaraAyo
 export interface HeroSection8Props {
-    title: string;
-    subTitle: string;
-    description: string;
+  title: string;
+  subTitle: string;
+  description: string;
 }
 
 //created by Omodara Ayodele
@@ -41,9 +41,8 @@ export interface HeroSection8Props {
 export interface SidebarLinkProps {
   iconSrc: string;
   label: string;
-  active?: boolean;
   link: string;
-};
+}
 
 //created by Omodara Ayodele
 //github: OmodaraAyo

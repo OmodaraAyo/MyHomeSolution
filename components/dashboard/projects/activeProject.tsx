@@ -16,7 +16,7 @@ export default function ActiveProject() {
           >
             {
                 activeProjects.map((project, index)=> (
-                    <div key={index} className='space-y-4'>
+                    <div key={index} className='space-y-4.5'>
                         {/* title */}
                         <div className="flex items-start justify-between">
     
@@ -52,7 +52,7 @@ export default function ActiveProject() {
 
                         {/* next step */}
                               <div>
-                                <h1 className="text-sm text-[#8E8E8E] mb-2">Next Steps:</h1>
+                                <h1 className="text-sm text-[#8E8E8E] mb-3">Next Steps:</h1>
                                 {
                                     nextStepData.map((step, index)=>(
                                         <div key={index} className="flex items-center gap-2">

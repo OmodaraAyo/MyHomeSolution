@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { otherDashboardImages } from "@/data/dashboard";
+import Link from "next/link";
 
 export default function DashboardPage() {
   return (
@@ -21,9 +22,9 @@ export default function DashboardPage() {
             </p>
           </div>
 
-          <button className="bg-[#1C3FAA] text-white px-5 py-2 rounded-lg text-sm font-medium">
+          <Link href="/dashboard/new-project" className="bg-[#1C3FAA] text-white px-5 py-2 rounded-lg text-sm font-medium">
             + Request Service
-          </button>
+          </Link>
         </div>
 
         {/* Start project */}
@@ -50,9 +51,9 @@ export default function DashboardPage() {
           <p className="text-sm text-gray-500 mb-4">
             Your active projects appear here.
           </p>
-          <button className="bg-[#1C3FAA] text-white px-4 py-2 rounded-md text-sm font-medium cursor-pointer">
+          <Link href="/dashboard/new-project" className="bg-[#1C3FAA] text-white px-4 py-2 rounded-md text-sm font-medium cursor-pointer">
             + New Request
-          </button>
+          </Link>
         </motion.div>
     </section>
   );

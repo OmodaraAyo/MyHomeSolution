@@ -2,11 +2,12 @@ import { CircleCheckBig, CircleAlert  } from "lucide-react";
 
 const dashboardLinkValue = "dashboard";
 
+
+{/**side-bar */}
 export const sidebarLinks = [
   {
     label: "Dashboard",
     iconSrc: "/assets/images/dashboard/home.svg",
-    active: true,
     link: `/${dashboardLinkValue}`,
   },
   {
@@ -121,7 +122,7 @@ export const recentTransactionsDummyData = [
   {
     id: "#ORD12421",
     service: "Local SEO Campaign",
-    amount: "4,000",
+    amount: "4000",
     date: "25 July, 2025  20:12am",
     status: "Successful",
     paymentMethod: "Bank Transfer",
@@ -129,7 +130,7 @@ export const recentTransactionsDummyData = [
   {
     id: "#ORD12422",
     service: "Logo & Brand Identity",
-    amount: "2,500",
+    amount: "2500",
     date: "26 July, 2025  20:12am",
     status: "Successful",
     paymentMethod: "Card",

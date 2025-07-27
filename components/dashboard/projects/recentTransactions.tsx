@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { recentTransactionLabels, recentTransactionsDummyData } from "@/data/dashboard";
 import { Square } from 'lucide-react';
 import Link from 'next/link';
+import { DisplayUSDCurrency } from "@/helpers/displayCurrency";
 
 export default function RecentTransactions() {
   return (
@@ -14,8 +15,15 @@ export default function RecentTransactions() {
       className="border border-[#E8E8E8] rounded-xl grid grid-cols-1 items-center justify-between gap-4 text-left"
     >
       <div className="px-5 pt-5 flex items-center justify-between">
-        <h1 className="text-[#4A4A4A] text-lg font-semibold tracking-wide">Recent Transactions</h1>
-        <Link href={"/"} className="flex items-center gap-0.5 text-[#1C3FAA] underline underline-offset-2">View All</Link>
+        <h1 className="text-[#4A4A4A] text-xl font-semibold tracking-wide">
+          Recent Transactions
+        </h1>
+        <Link
+          href={"/"}
+          className="flex items-center gap-0.5 text-[#1C3FAA] underline underline-offset-2"
+        >
+          View All
+        </Link>
       </div>
       <table className="w-full text-left">
         <thead>
@@ -41,16 +49,38 @@ export default function RecentTransactions() {
         <tbody>
           {/** Table data */}
           {recentTransactionsDummyData.map((transaction, index) => (
-            <tr key={index}>
-              <td className="flex items-center gap-4 p-3">
-                <Square className="inline-block" size={13} />
-                {transaction.id}
+            <tr
+              key={index}
+              className="font-semibold text-sm text-[#1A1C1E] tracking-wide"
+            >
+              <td className="gap-4 p-3">
+                <span className="inline-flex items-center gap-2">
+                  <Square size={13} />
+                  {transaction.id}
+                </span>
               </td>
               <td className="p-3">{transaction.date}</td>
               <td className="p-3">{transaction.service}</td>
-              <td className="p-3">{transaction.amount}</td>
-              <td className="p-3">{transaction.status}</td>
-              <td className="p-3"> <span className="bg-[#EDF1F3] text-[#4F4F4F] flex rounded-lg w-32 p-2 justify-center">{transaction.paymentMethod}</span></td>
+              <td className="p-3">
+                {DisplayUSDCurrency(parseFloat(transaction.amount))}
+              </td>
+              <td className="p-3 ">
+                <span className="border px-1 py-1.5 flex justify-center rounded-md" style={{
+                  borderColor:
+                    transaction.status === "Successful"
+                      ? "#1C3FAA"
+                      : transaction.status === "Pending"
+                      ? "#FFDB43"
+                      : transaction.status === "Failed"
+                      ? "#FB3748"
+                      : "#E0E0E0",
+                }}>{transaction.status}</span>
+              </td>
+              <td className="p-3">
+                <span className="bg-[#EDF1F3] text-[#4F4F4F] flex rounded-md w-32 px-1 py-1.5 justify-center">
+                  {transaction.paymentMethod}
+                </span>
+              </td>
             </tr>
           ))}
         </tbody>
