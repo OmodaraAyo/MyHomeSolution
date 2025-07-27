@@ -96,3 +96,7 @@ export default function LoginPage() {
     </section>
   );
 }
+
+
+//created by Omodara Ayodele 
+//github: OmodaraAyo

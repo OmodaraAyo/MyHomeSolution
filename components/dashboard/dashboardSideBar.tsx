@@ -10,12 +10,13 @@ export default function DashboardSideBar() {
         <div className="w-full h-10 bg-white rounded" />
 
         <nav className="space-y-4">
-          {sidebarLinks.map(({ label, iconSrc, active }) => (
+          {sidebarLinks.map(({ label, iconSrc, active, link }) => (
             <SidebarLinks
               key={label}
               label={label}
               iconSrc={iconSrc}
               active={active}
+              link={link}
             />
           ))}
         </nav>

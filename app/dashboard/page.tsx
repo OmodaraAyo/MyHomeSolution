@@ -6,7 +6,7 @@ import { otherDashboardImages } from "@/data/dashboard";
 
 export default function DashboardPage() {
   return (
-    <div>
+    <section>
         {/* Welcome Message */}
         <div className="flex justify-between mb-6 items-center px-1">
           <div>
@@ -54,6 +54,6 @@ export default function DashboardPage() {
             + New Request
           </button>
         </motion.div>
-    </div>
+    </section>
   );
 }

@@ -42,6 +42,7 @@ export interface SidebarLinkProps {
   iconSrc: string;
   label: string;
   active?: boolean;
+  link: string;
 };
 
 //created by Omodara Ayodele

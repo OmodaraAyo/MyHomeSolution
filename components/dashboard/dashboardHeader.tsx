@@ -1,5 +1,5 @@
 import React from 'react'
-import { Bell } from "lucide-react";
+import { Bell, Search } from "lucide-react";
 import Image from "next/image";
 
 export default function DashboardHeader() {
@@ -7,11 +7,14 @@ export default function DashboardHeader() {
     <div>
       {/* Top Bar */}
         <div className="flex items-center justify-between mb-6">
-          <input
+          <div className='w-1/2 max-w-4xl border rounded-md flex items-center gap-3 px-2 border-[#c2c1c1] outline-none'>
+            <Search className='w-5 h-5 text-[#787878]'/>
+            <input
             type="text"
             placeholder="Search"
-            className="border px-4 py-2 rounded-md w-1/2 outline-none border-[#c2c1c1]"
+            className="py-2 w-full outline-none"
           />
+          </div>
 
           <div className="flex items-center gap-4">
             <div className="border p-2.5 rounded-lg border-[#c2c1c1]">
