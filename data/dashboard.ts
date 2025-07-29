@@ -3,6 +3,9 @@ import { CircleCheckBig, CircleAlert  } from "lucide-react";
 const dashboardLinkValue = "dashboard";
 
 
+//created by Omodara Ayodele
+//github: OmodaraAyo
+
 {/**side-bar */}
 export const sidebarLinks = [
   {
@@ -44,9 +47,12 @@ export const otherDashboardImages = [
   },
 ];
 
-{
-  /** projects */
-}
+
+//created by Omodara Ayodele
+//github: OmodaraAyo
+
+
+{  /** projects */}
 export const projectList = [
   {
     projectTitle: "Total Projects",
@@ -70,6 +76,11 @@ export const projectList = [
     iconBg: "#e9f9f1",
   },
 ];
+
+
+//created by Omodara Ayodele
+//github: OmodaraAyo
+
 
 export const activeProjects = [
   {
@@ -96,6 +107,11 @@ export const progressData = [
   "Delivered",
 ];
 
+
+//created by Omodara Ayodele
+//github: OmodaraAyo
+
+
 export const nextStepData = [
   {
     description: "Your project has been submitted successfully.",
@@ -109,6 +125,11 @@ export const nextStepData = [
   },
 ];
 
+
+//created by Omodara Ayodele
+//github: OmodaraAyo
+
+
 export const recentTransactionLabels = [
   "Project ID",
   "Date & time",
@@ -117,6 +138,11 @@ export const recentTransactionLabels = [
   "Status",
   "Payment method",
 ];
+
+
+//created by Omodara Ayodele
+//github: OmodaraAyo
+
 
 export const recentTransactionsDummyData = [
   {
@@ -152,3 +178,15 @@ export const recentTransactionsDummyData = [
     paymentMethod: "Card",
   },
 ];
+
+
+//created by Omodara Ayodele
+//github: OmodaraAyo
+
+{/** New project data*/}
+
+export const categoryOptions = [
+  "Digital Marketing", 
+  "Growth Solutions", 
+  "Brand Scaling"
+]

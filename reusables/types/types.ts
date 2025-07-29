@@ -46,3 +46,13 @@ export interface SidebarLinkProps {
 
 //created by Omodara Ayodele
 //github: OmodaraAyo
+
+export interface CustomSelectProps {
+    value: string;
+    onChange: (selectedOption: string) => void;
+    options: string[];
+    placeholder?: string;
+}
+
+//created by Omodara Ayodele
+//github: OmodaraAyo

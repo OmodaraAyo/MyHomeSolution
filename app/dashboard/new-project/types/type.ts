@@ -15,6 +15,7 @@ export interface ServiceRequestContextForm {
 }
 export interface CustomServiceReqContextType {
   step: number;
+  totalSteps: number[];
   goToStep: (step: number) => void;
   nextStep: () => void;
   prevStep: () => void;

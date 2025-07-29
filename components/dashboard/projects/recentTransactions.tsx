@@ -88,3 +88,7 @@ export default function RecentTransactions() {
     </motion.div>
   );
 }
+
+
+//created by Omodara Ayodele
+//github: OmodaraAyo
