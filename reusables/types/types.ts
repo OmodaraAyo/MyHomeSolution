@@ -56,3 +56,43 @@ export interface CustomSelectProps {
 
 //created by Omodara Ayodele
 //github: OmodaraAyo
+
+//files types
+
+export interface FileUploadProps {
+  onFilesSelected: (files: FileList) => void
+  accept: string
+  dragActive: boolean
+  onDragStateChange: (active: boolean) => void
+}
+
+//created by Omodara Ayodele
+//github: OmodaraAyo
+
+export interface ImagePreviewProps {
+  isOpen: boolean
+  file: File | null
+  preview: string | null
+  onClose: () => void
+}
+
+//created by Omodara Ayodele
+//github: OmodaraAyo
+
+export interface FileListProps {
+  files: File[]
+  filePreviews: { [key: string]: string }
+  onPreview: (file: File) => void
+  onRemove: (index: number) => void
+}
+
+//created by Omodara Ayodele
+//github: OmodaraAyo
+
+export interface FileIconProps {
+  file: File
+  filePreviews: { [key: string]: string }
+}
+
+//created by Omodara Ayodele
+//github: OmodaraAyo

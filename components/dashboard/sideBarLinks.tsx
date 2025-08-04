@@ -7,7 +7,10 @@ import { usePathname } from "next/navigation";
 export function SidebarLinks(props: SidebarLinkProps) {
   const { iconSrc, label, link } = props;
   const pathname = usePathname();
-  const isActive = pathname === link
+  const isActive =
+    link === "/dashboard"
+      ? pathname === "/dashboard" || pathname.startsWith("/dashboard/new-project")
+      : pathname === link;
   return (
     <Link
       href={link}

@@ -188,5 +188,48 @@ export const recentTransactionsDummyData = [
 export const categoryOptions = [
   "Digital Marketing", 
   "Growth Solutions", 
-  "Brand Scaling"
+  "Brand Scaling",
 ]
+
+//created by Omodara Ayodele
+//github: OmodaraAyo
+
+export const subCategoryOptions = {
+  "Digital Marketing": ["SEO", "Content Marketing", "Social Media Management"],
+  "Growth Solutions": ["Email Marketing", "Lead Generation", "Conversion Optimization"],
+  "Brand Scaling": ["Brand Strategy", "Visual Identity", "Market Research"]
+};
+
+//created by Omodara Ayodele
+//github: OmodaraAyo
+
+//step 2 data
+
+export const industryOptions = [
+  "Technology",
+  "Healthcare",
+  "Finance",
+  "Education",
+  "Retail",
+  "Manufacturing",
+  "Consulting",
+  "Real Estate",
+  "Marketing & Advertising",
+  "Other",
+]
+
+//created by Omodara Ayodele
+//github: OmodaraAyo
+
+export const budgetOptions = [
+  "Under $1,000",
+  "$1,000 - $5,000",
+  "$5,000 - $10,000",
+  "$10,000 - $25,000",
+  "$25,000 - $50,000",
+  "$50,000+",
+  "Not sure yet",
+]
+
+//created by Omodara Ayodele
+//github: OmodaraAyo

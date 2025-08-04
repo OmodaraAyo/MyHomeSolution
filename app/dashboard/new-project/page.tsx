@@ -1,10 +1,19 @@
 "use client";
 import Step1 from "@/components/dashboard/new-project/step1";
-import React from "react";
-import { useServiceRequest } from "./hooks/useServiceRequestContext";
+import React, { useEffect } from "react";
+import Step2 from "@/components/dashboard/new-project/step2";
+import Step3 from "@/components/dashboard/new-project/step3";
+import { useServiceRequestStore } from "./store/useServiceRequestStore";
+import Step4 from "@/components/dashboard/new-project/step4";
 
 export default function NewProject() {
-  const { step, totalSteps } = useServiceRequest();
+  const { step, totalSteps, _hasHydrated, setHasHydrated } = useServiceRequestStore();
+
+  useEffect(() => {
+    if (!_hasHydrated) {
+      setHasHydrated(true);
+    }
+  }, [_hasHydrated, setHasHydrated]);
 
   return (
     <section className="container mx-auto w-full max-w-screen-sm">
@@ -38,9 +47,24 @@ export default function NewProject() {
             )})}
         </div>
 
-        {/* Step Content */}
-        {step === 1 && <Step1 />}
+        {!_hasHydrated ? (
+          <div className="flex items-center justify-center min-h-[400px]">
+            <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#1C3FAA]"></div>
+          </div>
+        ) : (
+          <>
+            {/* Step Content*/}
+            {step === 1 && <Step1 />}
+            {step === 2 && <Step2 />}
+            {step === 3 && <Step3 />}
+            {step === 4 && <Step4 />}
+          </>
+        )}
       </div>
     </section>
   );
 }
+
+
+//created by Omodara Ayodele
+//github: OmodaraAyo
