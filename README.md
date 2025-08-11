@@ -46,14 +46,6 @@ This document outlines the expected data structure for the new service request f
 | `expectedDelivery`   | `string`  | The expected delivery date for the project.      | Yes      |
 | `budgetRange`        | `string`  | The budget range for the project.                | Yes      |
 
-### `attachedFiles` Object Structure
-
-| Field  | Type     | Description                      |
-| ------ | -------- | -------------------------------- |
-| `name` | `string` | The name of the attached file.   |
-| `size` | `number` | The size of the file in bytes.   |
-| `type` | `string` | The MIME type of the file.       |
-
 ## Login
 
 - **Endpoint:** `/api/login`
