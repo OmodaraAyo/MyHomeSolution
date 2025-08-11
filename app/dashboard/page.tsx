@@ -11,11 +11,8 @@ export default function DashboardPage() {
 
   return (
     <section>
-      {hasProjects ? (
-        <DashboardProjects />
-      ) : (
-        <>
-          {/* Welcome Message */}
+
+      {/* Welcome Message */}
           <div className="flex justify-between mb-6 items-center px-1">
             <div>
               <h2
@@ -36,7 +33,10 @@ export default function DashboardPage() {
               + Request Service
             </Link>
           </div>
-
+      {hasProjects ? (
+        <DashboardProjects />
+      ) : (
+        <>
           {/* Start project */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}

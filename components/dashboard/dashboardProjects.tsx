@@ -9,25 +9,6 @@ import RecentTransactions from "@/components/dashboard/projects/recentTransactio
 export default function DashboardProjects() {
   return (
     <section>
-      {/* Welcome Message */}
-      <div className="flex justify-between mb-6 items-center px-1">
-        <div>
-          <h2
-            className={`text-xl font-semibold`}
-            style={{ fontFamily: "Sora, system-ui, sans-serif" }}
-          >
-            Welcome, Umar
-          </h2>
-          <p className="text-sm text-gray-600">
-            Ready to launch your next project?
-          </p>
-        </div>
-
-        <button className="bg-[#1C3FAA] text-white px-5 py-2 rounded-lg text-sm font-medium">
-          + Request Service
-        </button>
-      </div>
-
       {/* projects counter */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}

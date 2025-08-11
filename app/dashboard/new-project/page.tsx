@@ -35,7 +35,7 @@ export default function NewProject() {
             const isLast = index === steps.length - 1; 
             return (
               <div key={stepNumber} className="flex items-center">
-              <div className={`flex items-center justify-center w-7 h-7 rounded-full text-sm font-medium ${isActive ? "bg-[#D1DCFF] text-[#0A163B]" : "bg-[#FBFBFB] text-[#606060]"}`}>
+              <div className={`flex items-center justify-center w-7 h-7 rounded-full text-sm font-medium ${isActive || isCompleted ? "bg-[#D1DCFF] text-[#0A163B]" : "bg-[#FBFBFB] text-[#606060]"}`}>
                 {stepNumber}
               </div>
               {!isLast && (
