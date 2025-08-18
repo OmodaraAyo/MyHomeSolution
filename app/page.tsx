@@ -12,25 +12,29 @@ import BlogSection from "@/components/home/blog";
 import FoundersTestimonialSection from "@/reusables/foundersTestimonial";
 import LetsTalk from "@/reusables/letsTalk";
 import { useSearchParams, useRouter } from "next/navigation";
-import { useEffect } from "react";
+import { useEffect, Suspense } from "react";
 
-export default function Home() {
+function ScrollToHandler() {
   const searchParams = useSearchParams();
-  const scrollTo = searchParams.get("scrollTo")
-  const router = useRouter()
+  const scrollTo = searchParams.get("scrollTo");
+  const router = useRouter();
 
-  useEffect(()=> {
-    if(scrollTo) {
+  useEffect(() => {
+    if (scrollTo) {
       const element = document.getElementById(scrollTo);
-      if(element) {
-        setTimeout(()=> {
-          element.scrollIntoView({ behavior: "smooth"})
-          router.replace("/", { scroll: false })
-        }, 100)
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: "smooth" });
+          router.replace("/", { scroll: false });
+        }, 100);
       }
     }
-  }, [scrollTo, router])
+  }, [scrollTo, router]);
 
+  return null;
+}
+
+function HomeContent() {
   return (
     <>
       <HeroSection />
@@ -47,6 +51,17 @@ export default function Home() {
         <FoundersTestimonialSection />
         <LetsTalk />
       </div>
+    </>
+  );
+}
+
+export default function Home() {
+  return (
+    <>
+      <Suspense fallback={<div>Loading...</div>}>
+        <ScrollToHandler />
+      </Suspense>
+      <HomeContent />
     </>
   );
 }

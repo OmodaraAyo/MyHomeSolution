@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
-import sora from "@/public/assets/fonts/Sora";
 import { pricingHeroSectionData } from "@/data/pricing";
 import { heroSection6Data } from "@/data/case-study";
 
